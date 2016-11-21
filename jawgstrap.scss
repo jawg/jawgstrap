@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+/***********************************/
+/********** JAWG STRAP *************/
+/***********************************/
+
+
+/************* COLORS **************/
+$jawgblue: #0099D8;
+$jawgblue-highlight: #0070CE;
+$jawgblue-dark: #005e85;
+$jawgblue-ui: #2175bf;
+$jawgblue-bg: #c9dce8;
+
+$success: #00CC00;
+$success-btn: #38c13d;
+$success-highlight: #0d9e0d;
+$success-dark: #0f7a0f;
+$success-bg: #d2e8c9;
+
+$error: #CC0000;
+$error-btn: #b50909;
+$error-highlight: #a01010;
+$error-dark: #700f0f;
+$error-bg: #e8c9c9;
+
+$black-primary: #222222;
+$black-primary-2: #303030;
+$black-secondary: #383838;
+$black-secondary-2: #404040;
+$black-highlight: #555;
+
+
+$text-color-white: #efefef;
+$text-color-black: #131313;
+
+
+
+/******* PADDING & MARGINS *******/
+$padding-xs: 5px;
+$padding-sm: 6px;
+$padding-md: 8px;
+$padding-lg: 10px;
+$padding-xlg: 12px;
+$padding-xxlg: 14px;
+$padding-xxxlg: 16px;
+
+$margin-xs: 6px;
+$margin-sm: 8px;
+$margin-md: 10px;
+$margin-lg: 12px;
+$margin-xlg: 15px;
+$margin-xxlg: 20px;
+$margin-xxxlg: 25px;
+
+$radius-sm: 4px;
+$radius-xs: 3px;
+$radius-md: 6px;
+
+$size-25: 25px;
+
+/********** FONT-SIZE ***********/
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-md: 13px;
+$font-size-lg: 14px;
+$font-size-xlg: 16px;
+$font-size-xxlg: 18px;
+$font-size-xxxlg: 20px;
+
+
+/************ MAIN *************/
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+#jwg-strap {
+  /********** BUTTONS ************/
+
+  .btn {
+    font-size: $font-size-md;
+    color: $text-color-black;
+    background: #dedede;
+    border: none;
+    border-radius: 3px;
+
+    &:hover {
+      background: #cfcfcf;
+      cursor: pointer;
+    }
+
+    &.btn-xs {
+      padding: $padding-xs $padding-sm;
+      font-size: $font-size-sm;
+    }
+
+    &.btn-sm {
+      padding: $padding-lg $padding-xlg;
+      font-size: $font-size-md;
+    }
+
+    &.btn-lg {
+      padding: $padding-xxlg $padding-xxxlg;
+      font-size: $font-size-lg;
+    }
+
+    &.btn-xlg {
+      padding: $margin-xxlg $margin-xxxlg;
+      font-size: $font-size-xlg;
+    }
+
+    &.btn-primary {
+      background: $jawgblue;
+      color: $text-color-white;
+
+      &:hover {
+        background: $jawgblue-highlight;
+      }
+
+      &.btn-3d {
+        box-shadow: 0 4px 0 $jawgblue-dark;
+      }
+    }
+
+    &.btn-success {
+      background: $success-btn;
+      color: $text-color-white;
+
+      &:hover {
+        background: $success-highlight;
+      }
+
+      &.btn-3d {
+        box-shadow: 0 4px 0 $success-dark;
+      }
+    }
+
+    &.btn-error {
+      background: $error-btn;
+      color: $text-color-white;
+
+      &:hover {
+        background: $error-highlight;
+      }
+
+      &.btn-3d {
+        box-shadow: 0 4px 0 $error-dark;
+      }
+    }
+
+    &.btn-disabled {
+      background: $black-highlight;
+      color: $black-secondary-2;
+      cursor: not-allowed;
+
+      &:hover {
+        background: $black-highlight;
+      }
+
+      &.btn-3d {
+        box-shadow: 0 4px 0 $black-secondary-2;
+      }
+    }
+
+    &.btn-3d:active:not(.btn-disabled) {
+      position: relative;
+      top: 2px;
+      box-shadow: 0 2px 0 #333;
+    }
+  }
+
+  /********** ALERTS ***********/
+  .alert {
+    width: 100%;
+    margin: $margin-md 0;
+    padding: $padding-md;
+    -webkit-border-radius: $radius-xs;
+    -moz-border-radius: $radius-xs;
+    border-radius: $radius-xs;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera, IE 8+ */
+
+    &.error {
+      border: 1px solid $error-highlight;
+      background: $error-bg;
+      color: $error-highlight;
+    }
+
+    &.success {
+      border: 1px solid $success-highlight;
+      background: $success-bg;
+      color: $success-highlight;
+    }
+
+    &.info {
+      border: 1px solid $jawgblue-highlight;
+      background: $jawgblue-bg;
+      color: $jawgblue-highlight;
+    }
+  }
+
+  /********** TITLES ***********/
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: $margin-md 0;
+  }
+  h1 {
+    font-size: 2.7em;
+  }
+  h2 {
+    font-size: 2.3em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.8em;
+  }
+  h5 {
+    font-size: 1.6em;
+  }
+  h6 {
+    font-size: 1.4em;
+  }
+
+  hr {
+    display: block;
+    margin: 20px 0;
+    padding: 0;
+    color: #333;
+    background: #666;
+    height: 1px;
+    border: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:visited {
+      color: inherit;
+    }
+    &:hover {
+      color: $jawgblue;
+    }
+  }
+
+  /*********** FORM ************/
+  input[type=submit]{
+    &:focus{
+      border:none;
+    }
+  }
+  input, textarea, .input {
+    padding: $padding-md;
+    background: inherit;
+    margin: $padding-xs 0;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    transition: border 300ms ease;
+    font-size: 14px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera, IE 8+ */
+    -webkit-appearance: none; /* Override behavior on iOS search input which add rounded corners */
+
+    &.lg {
+      padding: $padding-xlg;
+    }
+
+    &.fullsize {
+      width: 100%;
+    }
+
+    &:focus {
+      border: 1px solid $jawgblue;
+    }
+
+    &.error {
+      border: 1px solid $error;
+      color: $error;
+    }
+    &.success {
+      border: 1px solid $success;
+      color: $success;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    &.nowrap {
+      flex-wrap: nowrap;
+    }
+    &.row {
+      flex-direction: row;
+    }
+    &.column {
+      flex-direction: column;
+    }
+    &.centered {
+      justify-content: center;
+    }
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.space-around {
+      justify-content: space-around;
+    }
+
+    .panel {
+      padding: $padding-md;
+      border: 1px solid $black-secondary-2;
+      border-radius: $radius-md;
+      box-sizing: border-box;
+      margin: $margin-xs;
+
+      &.clickable {
+        cursor: pointer;
+        &:hover {
+          border: 1px solid $jawgblue;
+        }
+      }
+
+      &.noborder {
+        border: none;
+        &:hover {
+          border: none;
+        }
+      }
+
+      &.flex-1 {
+        flex: 1;
+      }
+      &.flex-2 {
+        flex: 2;
+      }
+      &.flex-3 {
+        flex: 3;
+      }
+      &.flex-4 {
+        flex: 4;
+      }
+      &.flex-5 {
+        flex: 5;
+      }
+
+      .panel-title {
+        margin: 0 0 $margin-xs;
+        font-size: 30px;
+        font-weight: 300;
+        text-align: left;
+        color: $jawgblue-ui;
+      }
+    }
+  }
+
+/*** END JAWG STRAP WRAPPER ****/
+}
+

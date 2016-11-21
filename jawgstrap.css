@@ -1,0 +1,204 @@
+/***********************************/
+/********** JAWG STRAP *************/
+/***********************************/
+/************* COLORS **************/
+/******* PADDING & MARGINS *******/
+/********** FONT-SIZE ***********/
+#jwg-strap {
+  /************ MAIN *************/
+  /********** BUTTONS ************/
+  /********** ALERTS ***********/
+  /********** TITLES ***********/
+  /*********** FORM ************/
+  /*** END JAWG STRAP WRAPPER ****/ }
+  #jwg-strap html, #jwg-strap body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+  #jwg-strap .btn {
+    font-size: 13px;
+    color: #131313;
+    background: #dedede;
+    border: none;
+    border-radius: 3px; }
+    #jwg-strap .btn:hover {
+      background: #cfcfcf;
+      cursor: pointer; }
+    #jwg-strap .btn.btn-xs {
+      padding: 5px 6px;
+      font-size: 12px; }
+    #jwg-strap .btn.btn-sm {
+      padding: 10px 12px;
+      font-size: 13px; }
+    #jwg-strap .btn.btn-lg {
+      padding: 14px 16px;
+      font-size: 14px; }
+    #jwg-strap .btn.btn-xlg {
+      padding: 20px 25px;
+      font-size: 16px; }
+    #jwg-strap .btn.btn-primary {
+      background: #0099D8;
+      color: #efefef; }
+      #jwg-strap .btn.btn-primary:hover {
+        background: #0070CE; }
+      #jwg-strap .btn.btn-primary.btn-3d {
+        box-shadow: 0 4px 0 #005e85; }
+    #jwg-strap .btn.btn-success {
+      background: #38c13d;
+      color: #efefef; }
+      #jwg-strap .btn.btn-success:hover {
+        background: #0d9e0d; }
+      #jwg-strap .btn.btn-success.btn-3d {
+        box-shadow: 0 4px 0 #0f7a0f; }
+    #jwg-strap .btn.btn-error {
+      background: #b50909;
+      color: #efefef; }
+      #jwg-strap .btn.btn-error:hover {
+        background: #a01010; }
+      #jwg-strap .btn.btn-error.btn-3d {
+        box-shadow: 0 4px 0 #700f0f; }
+    #jwg-strap .btn.btn-disabled {
+      background: #555;
+      color: #404040;
+      cursor: not-allowed; }
+      #jwg-strap .btn.btn-disabled:hover {
+        background: #555; }
+      #jwg-strap .btn.btn-disabled.btn-3d {
+        box-shadow: 0 4px 0 #404040; }
+    #jwg-strap .btn.btn-3d:active:not(.btn-disabled) {
+      position: relative;
+      top: 2px;
+      box-shadow: 0 2px 0 #333; }
+  #jwg-strap .alert {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera, IE 8+ */ }
+    #jwg-strap .alert.error {
+      border: 1px solid #a01010;
+      background: #e8c9c9;
+      color: #a01010; }
+    #jwg-strap .alert.success {
+      border: 1px solid #0d9e0d;
+      background: #d2e8c9;
+      color: #0d9e0d; }
+    #jwg-strap .alert.info {
+      border: 1px solid #0070CE;
+      background: #c9dce8;
+      color: #0070CE; }
+  #jwg-strap h1, #jwg-strap h2, #jwg-strap h3, #jwg-strap h4, #jwg-strap h5, #jwg-strap h6 {
+    font-weight: 300;
+    margin: 10px 0; }
+  #jwg-strap h1 {
+    font-size: 2.2em; }
+  #jwg-strap h2 {
+    font-size: 2em; }
+  #jwg-strap h3 {
+    font-size: 1.8em; }
+  #jwg-strap h4 {
+    font-size: 1.6em; }
+  #jwg-strap h5 {
+    font-size: 1.4em; }
+  #jwg-strap h6 {
+    font-size: 1.2em; }
+  #jwg-strap hr {
+    display: block;
+    margin: 20px 0;
+    padding: 0;
+    color: #333;
+    background: #666;
+    height: 1px;
+    border: 0; }
+  #jwg-strap a {
+    text-decoration: none; }
+    #jwg-strap a:visited {
+      color: inherit; }
+    #jwg-strap a:hover {
+      color: #0099D8; }
+  #jwg-strap input, #jwg-strap textarea, #jwg-strap .input {
+    padding: 8px;
+    background: inherit;
+    margin: 5px 0;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    transition: border 300ms ease;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera, IE 8+ */
+    -webkit-appearance: none;
+    /* Override behavior on iOS search input which add rounded corners */ }
+    #jwg-strap input.lg, #jwg-strap textarea.lg, #jwg-strap .input.lg {
+      padding: 12px; }
+    #jwg-strap input.fullsize, #jwg-strap textarea.fullsize, #jwg-strap .input.fullsize {
+      width: 100%; }
+    #jwg-strap input:focus, #jwg-strap textarea:focus, #jwg-strap .input:focus {
+      border: 1px solid #0099D8; }
+    #jwg-strap input.error, #jwg-strap textarea.error, #jwg-strap .input.error {
+      border: 1px solid #CC0000;
+      color: #CC0000; }
+    #jwg-strap input.success, #jwg-strap textarea.success, #jwg-strap .input.success {
+      border: 1px solid #00CC00;
+      color: #00CC00; }
+  #jwg-strap .container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap; }
+    #jwg-strap .container.nowrap {
+      flex-wrap: nowrap; }
+    #jwg-strap .container.row {
+      flex-direction: row; }
+    #jwg-strap .container.column {
+      flex-direction: column; }
+    #jwg-strap .container.centered {
+      justify-content: center; }
+    #jwg-strap .container.space-between {
+      justify-content: space-between; }
+    #jwg-strap .container.space-around {
+      justify-content: space-around; }
+    #jwg-strap .container .panel {
+      padding: 8px;
+      border: 1px solid #404040;
+      border-radius: 6px;
+      box-sizing: border-box;
+      margin: 6px; }
+      #jwg-strap .container .panel.clickable {
+        cursor: pointer; }
+        #jwg-strap .container .panel.clickable:hover {
+          border: 1px solid #0099D8; }
+      #jwg-strap .container .panel.noborder {
+        border: none; }
+        #jwg-strap .container .panel.noborder:hover {
+          border: none; }
+      #jwg-strap .container .panel.flex-1 {
+        flex: 1; }
+      #jwg-strap .container .panel.flex-2 {
+        flex: 2; }
+      #jwg-strap .container .panel.flex-3 {
+        flex: 3; }
+      #jwg-strap .container .panel.flex-4 {
+        flex: 4; }
+      #jwg-strap .container .panel.flex-5 {
+        flex: 5; }
+      #jwg-strap .container .panel .panel-title {
+        margin: 0 0 6px;
+        font-size: 30px;
+        font-weight: 300;
+        text-align: left;
+        color: #2175bf; }
+
+/*# sourceMappingURL=jawgstrap.css.map */

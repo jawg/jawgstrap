@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JawgStrap 1.0</title>
+  <link rel="stylesheet" href="jawgstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+  <style>
+
+    body{
+      background: #c9e0e8;
+    }
+    .wrap{
+      width:80%;
+      margin:auto;
+      padding:25px 15px;
+      background: #efefef;
+    }
+
+    .console{
+      font-family: "Courier New";
+      color: #e2464e;
+      font-size: 12px;
+      background: #333;
+      padding: 8px 10px;
+      border-radius: 3px;
+      cursor: text;
+    }
+    pre, code{
+      margin:0;
+      padding:0;
+    }
+
+    footer{
+      min-height: 100px;
+      margin-top:30px;
+      background: #222;
+      color: white;
+    }
+
+    .top{
+      text-align: right;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap" id="jwg-strap">
+  <h1 id="top">JawgStrap 1.0 Documentation</h1>
+  <ul style="list-style: decimal; font-size: 16px;">
+    <li><a href="#started">Getting Started</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#alerts">Alerts</a></li>
+    <li><a href="#title">Title</a></li>
+    <li><a href="#form">Form</a></li>
+    <li><a href="#panel">Panel</a></li>
+  </ul>
+  <hr>
+
+  <h2 id="started">Getting Started</h2>
+  To use JawgStrap, you need to wrap your content in a block with id "jwg-strap".
+  <p class="console">
+    <code>
+      &lt;div id="jwg-strap"&gt;<br>
+        <em>HERE GOES YOUR CONTENT TO JAWGSTRAP !</em><br>
+      &lt;/div&gt;<br>
+    </code>
+  </p>
+
+  <hr>
+  <h2 id="buttons">Buttons</h2>
+  <h4>Default style</h4>
+  <p class="console"><code>
+    &lt;button class="btn btn-xs"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-sm"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-lg"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-xlg"&gt;Test button&lt;/button&gt;<br>
+  </code></p>
+  <div>
+    <button class="btn btn-xs">Test button</button>
+    <button class="btn btn-sm">Test button</button>
+    <button class="btn btn-lg">Test button</button>
+    <button class="btn btn-xlg">Test button</button>
+  </div>
+
+  <h4>Primary style</h4>
+  <p class="console"><code>btn btn-primary</code></p>
+  <div>
+    <button class="btn btn-xs btn-primary">Test button</button>
+    <button class="btn btn-sm btn-primary">Test button</button>
+    <button class="btn btn-lg btn-primary">Test button</button>
+    <button class="btn btn-xlg btn-primary">Test button</button>
+  </div>
+
+  <h4>Success style</h4>
+  <p class="console"><code>btn btn-success</code></p>
+  <div>
+    <button class="btn btn-xs btn-success">Test button</button>
+    <button class="btn btn-sm btn-success">Test button</button>
+    <button class="btn btn-lg btn-success">Test button</button>
+    <button class="btn btn-xlg btn-success">Test button</button>
+  </div>
+
+  <h4>Error style</h4>
+  <p class="console"><code>
+    &lt;button class="btn btn-xs btn-error"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-sm btn-error"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-lg btn-error"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-xlg btn-error"&gt;Test button&lt;/button&gt;<br>
+  </code></p>
+  <div>
+    <button class="btn btn-xs btn-error">Test button</button>
+    <button class="btn btn-sm btn-error">Test button</button>
+    <button class="btn btn-lg btn-error">Test button</button>
+    <button class="btn btn-xlg btn-error">Test button</button>
+  </div>
+
+  <h4>Disabled style</h4>
+  <p class="console"><code>
+    &lt;button class="btn btn-xs btn-disabled"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-sm btn-disabled"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-lg btn-disable"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-xlg btn-disabled"&gt;Test button&lt;/button&gt;<br>
+  </code></p>
+  <div>
+    <button class="btn btn-xs btn-disabled">Test button</button>
+    <button class="btn btn-sm btn-disabled">Test button</button>
+    <button class="btn btn-lg btn-disabled">Test button</button>
+    <button class="btn btn-xlg btn-disabled">Test button</button>
+  </div>
+
+  <h4>With 3D</h4>
+  <p class="console"><code>
+    &lt;button class="btn btn-xs btn-primary btn-3d"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-sm btn-primary btn-3d"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-lg btn-primary btn-3d"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-xlg btn-primary btn-3d"&gt;Test button&lt;/button&gt;<br>
+    </code>
+  </p>
+  <div>
+    <button class="btn btn-xs btn-primary btn-3d">Test button</button>
+    <button class="btn btn-sm btn-primary btn-3d">Test button</button>
+    <button class="btn btn-lg btn-primary btn-3d">Test button</button>
+    <button class="btn btn-xlg btn-primary btn-3d">Test button</button>
+  </div>
+
+  <h4>Different 3D styles</h4>
+  <div>
+    <button class="btn btn-lg btn-primary btn-3d">Test button</button>
+    <button class="btn btn-lg btn-success btn-3d">Test button</button>
+    <button class="btn btn-lg btn-error btn-3d">Test button</button>
+    <button class="btn btn-lg btn-disabled btn-3d">Test button</button>
+  </div>
+
+  <a href="#top" class="top">Back to top</a>
+  <hr>
+  <h2 id="alerts">Alerts</h2>
+  <p class="console">
+    <code>
+      &lt;div class="alert success"&gt;This is a success alert !&lt;/div&gt;<br>
+      &lt;div class="alert error"&gt;This is an error alert !&lt;/div&gt;<br>
+      &lt;div class="alert info"&gt;This is an information alert !&lt;/div&gt;<br>
+    </code>
+  </p>
+  <h4>Success alert</h4>
+  <div class="alert success">This is a success alert !</div>
+  <h4>Error alert</h4>
+  <div class="alert error">This is an error alert !</div>
+  <h4>Info alert</h4>
+  <div class="alert info">This is an information alert !</div>
+
+
+  <a href="#top" class="top">Back to top</a>
+  <hr>
+  <h2 id="title">Title</h2>
+  <p class="console">
+    <code>
+      &lt;h1&gt;Title h1&lt;/h1&gt;<br>
+      &lt;h2&gt;Title h2&lt;/h2&gt;<br>
+      &lt;h3&gt;Title h3&lt;/h3&gt;<br>
+      &lt;h4&gt;Title h4&lt;/h4&gt;<br>
+      &lt;h5&gt;Title h5&lt;/h5&gt;<br>
+      &lt;h6&gt;Title h6&lt;/h6&gt;<br>
+    </code>
+  </p>
+  <div style="color: #1d64d6; margin-left: 20px;">
+    <h1>Title h1</h1>
+    <h2>Title h2</h2>
+    <h3>Title h3</h3>
+    <h4>Title h4</h4>
+    <h5>Title h5</h5>
+    <h6>Title h6</h6>
+  </div>
+
+  <a href="#top" class="top">Back to top</a>
+  <hr>
+  <h2 id="form">Form</h2>
+  <h4>Input</h4>
+  <p class="console"><code>
+    &lt;input type="text" class="input" placeholder="Input text" /&gt;<br>
+    &lt;input type="text" class="input lg" placeholder="Input text large" /&gt;<br>
+    &lt;input type="text" class="input lg fullsize" placeholder="Input text large fullsize" /&gt;<br>
+    &lt;input type="text" class="input fullsize error" placeholder="Input text fullsize error" /&gt;<br>
+    &lt;input type="text" class="input fullsize success" placeholder="Input text fullsize success" /&gt;<br>
+    &lt;input type="submit" class="btn btn-3d btn-primary" value="Envoyer" /&gt;
+
+  </code></p>
+  <div>
+    <input type="text" class="input" placeholder="Input text" /><br>
+    <input type="text" class="input lg" placeholder="Input text large" />
+    <input type="text" class="input lg fullsize" placeholder="Input text large fullsize" />
+    <input type="text" class="input fullsize error" placeholder="Input text fullsize error" />
+    <input type="text" class="input fullsize success" placeholder="Input text fullsize success" />
+    <input type="submit" class="btn btn-3d btn-primary" value="Envoyer" />
+  </div>
+  <a href="#top" class="top">Back to top</a>
+  <hr>
+  <h2 id="panel">Panel</h2>
+  <u>Code</u>
+  
+  <pre><p class="console"><code>&lt;div class="container row space-between"&gt;
+  &lt;div class="panel"&gt;
+    &lt;h2 class="panel-title"&gt;Panel title&lt;/h2&gt;
+    This is a clickable Panel
+  &lt;/div&gt;
+  &lt;div class="panel flex-2"&gt;
+    &lt;h2 class="panel-title"&gt;Panel title&lt;/h2&gt;
+    This is a Panel with flex-2 weight
+  &lt;/div&gt;
+  &lt;div class="panel flex-3"&gt;
+    &lt;h2 class="panel-title"&gt;Panel title&lt;/h2&gt;
+    This is a Panel with flex-3 weight
+  &lt;/div&gt;
+  &lt;div class="panel noborder"&gt;
+    &lt;h2 class="panel-title"&gt;Panel title&lt;/h2&gt;
+    This is a Panel with no border
+  &lt;/div&gt;
+&lt;/div&gt;</code></p>
+  </pre>
+
+  <u>CSS Specifications :</u>
+  <ul>
+    <li><strong>container</strong></li>
+    <ul>
+      <li>row : display panels in row direction</li>
+      <li>column : display panels in column direction</li>
+      <li>nowrap : avoid wrapping</li>
+      <li>centered : center the panels</li>
+      <li>space-between : panels take all place available in width with white space between</li>
+      <li>space-around : variant of space-between </li>
+      <li style="list-style: disc"><strong>panel</strong></li>
+      <ul style="list-style: circle">
+        <li><u>default :</u> not flexible</li>
+        <li>flex-1 : weight of panel</li>
+        <li>flex-2 : weight of panel</li>
+        <li>flex-3 : weight of panel</li>
+        <li>flex-4 : weight of panel</li>
+        <li>flex-5 : weight of panel</li>
+        <li style="list-style: disc"><strong>panel-title</strong></li>
+      </ul>
+    </ul>
+
+  </ul>
+
+  <u>Example :</u>
+  <div class="container row space-between">
+    <div class="panel clickable">
+      <h2 class="panel-title">Panel title</h2>
+     This is a clickable Panel
+    </div>
+    <div class="panel flex-2">
+      <h2 class="panel-title">Panel title</h2>
+      This is a Panel with flex-2 weight
+    </div>
+    <div class="panel flex-3">
+      <h2 class="panel-title">Panel title</h2>
+      This is a Panel with flex-3 weight
+    </div>
+    <div class="panel noborder">
+      <h2 class="panel-title">Panel title</h2>
+      This is a Panel with no border
+    </div>
+  </div>
+  <a href="#top" class="top">Back to top</a>
+</div>
+<footer class="container row centered">
+  <div class="panel noborder">
+    JawgStrap 1.0</strong> &bullet; Ebusiness Information &bullet; 2016</center>
+  </div>
+</footer>
+</body>
+</html>
