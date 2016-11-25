@@ -4,20 +4,19 @@
 /************* COLORS **************/
 /******* PADDING & MARGINS *******/
 /********** FONT-SIZE ***********/
+/************ MAIN *************/
 #jwg-strap {
-  /************ MAIN *************/
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   /********** BUTTONS ************/
   /********** ALERTS ***********/
   /********** TITLES ***********/
   /*********** FORM ************/
   /*** END JAWG STRAP WRAPPER ****/ }
-  #jwg-strap html, #jwg-strap body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif; }
   #jwg-strap .btn {
     font-size: 13px;
     color: #131313;
@@ -101,17 +100,17 @@
     font-weight: 300;
     margin: 10px 0; }
   #jwg-strap h1 {
-    font-size: 2.2em; }
+    font-size: 2.7em; }
   #jwg-strap h2 {
-    font-size: 2em; }
+    font-size: 2.3em; }
   #jwg-strap h3 {
-    font-size: 1.8em; }
+    font-size: 2em; }
   #jwg-strap h4 {
-    font-size: 1.6em; }
+    font-size: 1.8em; }
   #jwg-strap h5 {
-    font-size: 1.4em; }
+    font-size: 1.6em; }
   #jwg-strap h6 {
-    font-size: 1.2em; }
+    font-size: 1.4em; }
   #jwg-strap hr {
     display: block;
     margin: 20px 0;
@@ -121,11 +120,14 @@
     height: 1px;
     border: 0; }
   #jwg-strap a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: inherit; }
     #jwg-strap a:visited {
       color: inherit; }
     #jwg-strap a:hover {
       color: #0099D8; }
+  #jwg-strap input[type=submit]:focus {
+    border: none; }
   #jwg-strap input, #jwg-strap textarea, #jwg-strap .input {
     padding: 8px;
     background: inherit;

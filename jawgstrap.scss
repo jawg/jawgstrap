@@ -7,14 +7,16 @@
 
 /************* COLORS **************/
 $jawgblue: #0099D8;
-$jawgblue-highlight: #0070CE;
+$jawgblue-highlight: #1dabe5;
 $jawgblue-dark: #005e85;
 $jawgblue-ui: #2175bf;
 $jawgblue-bg: #c9dce8;
 
+$background-lite: #ededed;
+
 $success: #00CC00;
-$success-btn: #38c13d;
-$success-highlight: #0d9e0d;
+$success-btn: #43A047;
+$success-highlight: #52b756;
 $success-dark: #0f7a0f;
 $success-bg: #d2e8c9;
 
@@ -37,6 +39,7 @@ $text-color-black: #131313;
 
 
 /******* PADDING & MARGINS *******/
+$padding-xxs: 5px;
 $padding-xs: 5px;
 $padding-sm: 6px;
 $padding-md: 8px;
@@ -84,7 +87,7 @@ html, body {
   /********** BUTTONS ************/
 
   .btn {
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
     color: $text-color-black;
     background: #dedede;
     border: none;
@@ -209,7 +212,7 @@ html, body {
   /********** TITLES ***********/
   h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
-    margin: $margin-md 0;
+    margin: $margin-xs 0;
   }
   h1 {
     font-size: 2.7em;
@@ -268,10 +271,20 @@ html, body {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera, IE 8+ */
-    -webkit-appearance: none; /* Override behavior on iOS search input which add rounded corners */
+    //-webkit-appearance: none; /* Override behavior on iOS search input which add rounded corners */
 
     &.lg {
       padding: $padding-xlg;
+    }
+
+    &.md {
+      padding: $padding-sm;
+    }
+
+    &.sm {
+      padding: $padding-xxs;
+      height: 37px;
+      line-height: 25px;
     }
 
     &.fullsize {
@@ -363,6 +376,6 @@ html, body {
     }
   }
 
-/*** END JAWG STRAP WRAPPER ****/
+  /*** END JAWG STRAP WRAPPER ****/
 }
 
