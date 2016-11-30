@@ -20,6 +20,12 @@ $success-highlight: #52b756;
 $success-dark: #0f7a0f;
 $success-bg: #d2e8c9;
 
+$warning: #cc7300;
+$warning-btn: #c97114;
+$warning-highlight: #d18514;
+$warning-dark: #a85a10;
+$warning-bg: #f4d9cb;
+
 $error: #CC0000;
 $error-btn: #b50909;
 $error-highlight: #a01010;
@@ -31,6 +37,7 @@ $black-primary-2: #303030;
 $black-secondary: #383838;
 $black-secondary-2: #404040;
 $black-highlight: #555;
+$btn-highlight: #AAA;
 
 
 $text-color-white: #efefef;
@@ -70,6 +77,7 @@ $font-size-lg: 14px;
 $font-size-xlg: 16px;
 $font-size-xxlg: 18px;
 $font-size-xxxlg: 20px;
+$font-size-xxxxlg: 50px;
 
 
 /************ MAIN *************/
@@ -93,8 +101,12 @@ html, body {
     border: none;
     border-radius: 3px;
 
+    &.btn-3d {
+      box-shadow: 0 4px 0 $btn-highlight;
+    }
+
     &:hover {
-      background: #cfcfcf;
+      background: #eeeeee;
       cursor: pointer;
     }
 
@@ -154,6 +166,19 @@ html, body {
 
       &.btn-3d {
         box-shadow: 0 4px 0 $error-dark;
+      }
+    }
+
+    &.btn-warning {
+      background: $warning-btn;
+      color: $text-color-white;
+
+      &:hover {
+        background: $warning-highlight;
+      }
+
+      &.btn-3d {
+        box-shadow: 0 4px 0 $warning-dark;
       }
     }
 
