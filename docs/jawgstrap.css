@@ -1,30 +1,41 @@
 /***********************************/
 /********** JAWG STRAP *************/
 /***********************************/
+/*/
+ * Created by Antoine Lebel - Ebusiness Information 2016
+ * Created & designed for JawgMaps webapps
+/*/
 /************* COLORS **************/
 /******* PADDING & MARGINS *******/
 /********** FONT-SIZE ***********/
 /************ MAIN *************/
-#jwg-strap {
-  font-size: 14px;
-  padding: 0;
+html, body {
+  width: 100%;
   margin: 0;
+  padding: 0;
   outline: none;
+  font-size: 14px;
   box-sizing: border-box;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+
+#jwg-strap {
   /********** BUTTONS ************/
   /********** ALERTS ***********/
   /********** TITLES ***********/
   /*********** FORM ************/
+  /********** MARGINS ************/
+  /********** PADDING ************/
   /*** END JAWG STRAP WRAPPER ****/ }
   #jwg-strap .btn {
-    font-size: 13px;
+    font-size: 14px;
     color: #131313;
     background: #dedede;
     border: none;
     border-radius: 3px; }
+    #jwg-strap .btn.btn-3d {
+      box-shadow: 0 4px 0 #AAA; }
     #jwg-strap .btn:hover {
-      background: #cfcfcf;
+      background: #eeeeee;
       cursor: pointer; }
     #jwg-strap .btn.btn-xs {
       padding: 5px 6px;
@@ -42,14 +53,14 @@
       background: #0099D8;
       color: #efefef; }
       #jwg-strap .btn.btn-primary:hover {
-        background: #0070CE; }
+        background: #1dabe5; }
       #jwg-strap .btn.btn-primary.btn-3d {
         box-shadow: 0 4px 0 #005e85; }
     #jwg-strap .btn.btn-success {
-      background: #38c13d;
+      background: #43A047;
       color: #efefef; }
       #jwg-strap .btn.btn-success:hover {
-        background: #0d9e0d; }
+        background: #52b756; }
       #jwg-strap .btn.btn-success.btn-3d {
         box-shadow: 0 4px 0 #0f7a0f; }
     #jwg-strap .btn.btn-error {
@@ -59,6 +70,13 @@
         background: #a01010; }
       #jwg-strap .btn.btn-error.btn-3d {
         box-shadow: 0 4px 0 #700f0f; }
+    #jwg-strap .btn.btn-warning {
+      background: #c97114;
+      color: #efefef; }
+      #jwg-strap .btn.btn-warning:hover {
+        background: #d18514; }
+      #jwg-strap .btn.btn-warning.btn-3d {
+        box-shadow: 0 4px 0 #a85a10; }
     #jwg-strap .btn.btn-disabled {
       background: #555;
       color: #404040;
@@ -89,16 +107,16 @@
       background: #e8c9c9;
       color: #a01010; }
     #jwg-strap .alert.success {
-      border: 1px solid #0d9e0d;
+      border: 1px solid #52b756;
       background: #d2e8c9;
-      color: #0d9e0d; }
+      color: #52b756; }
     #jwg-strap .alert.info {
-      border: 1px solid #0070CE;
+      border: 1px solid #1dabe5;
       background: #c9dce8;
-      color: #0070CE; }
+      color: #1dabe5; }
   #jwg-strap h1, #jwg-strap h2, #jwg-strap h3, #jwg-strap h4, #jwg-strap h5, #jwg-strap h6 {
     font-weight: 300;
-    margin: 10px 0; }
+    margin: 6px 0; }
   #jwg-strap h1 {
     font-size: 2.7em; }
   #jwg-strap h2 {
@@ -141,11 +159,15 @@
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
     box-sizing: border-box;
-    /* Opera, IE 8+ */
-    -webkit-appearance: none;
-    /* Override behavior on iOS search input which add rounded corners */ }
+    /* Opera, IE 8+ */ }
     #jwg-strap input.lg, #jwg-strap textarea.lg, #jwg-strap .input.lg {
       padding: 12px; }
+    #jwg-strap input.md, #jwg-strap textarea.md, #jwg-strap .input.md {
+      padding: 6px; }
+    #jwg-strap input.sm, #jwg-strap textarea.sm, #jwg-strap .input.sm {
+      padding: 4px;
+      height: 37px;
+      line-height: 25px; }
     #jwg-strap input.fullsize, #jwg-strap textarea.fullsize, #jwg-strap .input.fullsize {
       width: 100%; }
     #jwg-strap input:focus, #jwg-strap textarea:focus, #jwg-strap .input:focus {
@@ -202,5 +224,117 @@
         font-weight: 300;
         text-align: left;
         color: #2175bf; }
+  #jwg-strap .margin-left-xs {
+    margin-left: 6px; }
+  #jwg-strap .margin-left-sm {
+    margin-left: 10px; }
+  #jwg-strap .margin-left-md {
+    margin-left: 15px; }
+  #jwg-strap .margin-left-lg {
+    margin-left: 20px; }
+  #jwg-strap .margin-right-xs {
+    margin-right: 6px; }
+  #jwg-strap .margin-right-sm {
+    margin-right: 10px; }
+  #jwg-strap .margin-right-md {
+    margin-right: 15px; }
+  #jwg-strap .margin-right-lg {
+    margin-right: 20px; }
+  #jwg-strap .margin-top-xs {
+    margin-top: 6px; }
+  #jwg-strap .margin-top-sm {
+    margin-top: 10px; }
+  #jwg-strap .margin-top-md {
+    margin-top: 15px; }
+  #jwg-strap .margin-top-lg {
+    margin-top: 20px; }
+  #jwg-strap .margin-bottom-xs {
+    margin-bottom: 6px; }
+  #jwg-strap .margin-bottom-sm {
+    margin-bottom: 10px; }
+  #jwg-strap .margin-bottom-md {
+    margin-bottom: 15px; }
+  #jwg-strap .margin-bottom-lg {
+    margin-bottom: 20px; }
+  #jwg-strap .margin-side-xs {
+    margin: 0 6px; }
+  #jwg-strap .margin-side-sm {
+    margin: 0 10px; }
+  #jwg-strap .margin-side-md {
+    margin: 0 15px; }
+  #jwg-strap .margin-side-lg {
+    margin: 0 20px; }
+  #jwg-strap .margin-height-xs {
+    margin: 6px 0; }
+  #jwg-strap .margin-height-sm {
+    margin: 10px 0; }
+  #jwg-strap .margin-height-md {
+    margin: 15px 0; }
+  #jwg-strap .margin-height-lg {
+    margin: 20px 0; }
+  #jwg-strap .margin-xs {
+    margin: 6px; }
+  #jwg-strap .margin-sm {
+    margin: 10px; }
+  #jwg-strap .margin-md {
+    margin: 15px; }
+  #jwg-strap .margin-lg {
+    margin: 20px; }
+  #jwg-strap .padding-left-xs {
+    padding-left: 5px; }
+  #jwg-strap .padding-left-sm {
+    padding-left: 8px; }
+  #jwg-strap .padding-left-md {
+    padding-left: 12px; }
+  #jwg-strap .padding-left-lg {
+    padding-left: 14px; }
+  #jwg-strap .padding-right-xs {
+    padding-right: 5px; }
+  #jwg-strap .padding-right-sm {
+    padding-right: 8px; }
+  #jwg-strap .padding-right-md {
+    padding-right: 12px; }
+  #jwg-strap .padding-right-lg {
+    padding-right: 14px; }
+  #jwg-strap .padding-top-xs {
+    padding-top: 5px; }
+  #jwg-strap .padding-top-sm {
+    padding-top: 8px; }
+  #jwg-strap .padding-top-md {
+    padding-top: 12px; }
+  #jwg-strap .padding-top-lg {
+    padding-top: 14px; }
+  #jwg-strap .padding-bottom-xs {
+    padding-bottom: 5px; }
+  #jwg-strap .padding-bottom-sm {
+    padding-bottom: 8px; }
+  #jwg-strap .padding-bottom-md {
+    padding-bottom: 12px; }
+  #jwg-strap .padding-bottom-lg {
+    padding-bottom: 14px; }
+  #jwg-strap .padding-side-xs {
+    padding: 0 5px; }
+  #jwg-strap .padding-side-sm {
+    padding: 0 8px; }
+  #jwg-strap .padding-side-md {
+    padding: 0 12px; }
+  #jwg-strap .padding-side-lg {
+    padding: 0 14px; }
+  #jwg-strap .padding-height-xs {
+    padding: 5px 0; }
+  #jwg-strap .padding-height-sm {
+    padding: 8px 0; }
+  #jwg-strap .padding-height-md {
+    padding: 12px 0; }
+  #jwg-strap .padding-height-lg {
+    padding: 14px 0; }
+  #jwg-strap .padding-xs {
+    padding: 5px; }
+  #jwg-strap .padding-sm {
+    padding: 8px; }
+  #jwg-strap .padding-md {
+    padding: 12px; }
+  #jwg-strap .padding-lg {
+    padding: 14px; }
 
 /*# sourceMappingURL=jawgstrap.css.map */

@@ -4,6 +4,10 @@
 /********** JAWG STRAP *************/
 /***********************************/
 
+/*/
+ * Created by Antoine Lebel - Ebusiness Information 2016
+ * Created & designed for JawgMaps webapps
+/*/
 
 /************* COLORS **************/
 $jawgblue: #0099D8;
@@ -46,7 +50,7 @@ $text-color-black: #131313;
 
 
 /******* PADDING & MARGINS *******/
-$padding-xxs: 5px;
+$padding-xxs: 4px;
 $padding-xs: 5px;
 $padding-sm: 6px;
 $padding-md: 8px;
@@ -400,6 +404,68 @@ html, body {
       }
     }
   }
+
+  /********** MARGINS ************/
+
+  .margin-left-xs { margin-left: $margin-xs; }
+  .margin-left-sm { margin-left: $margin-md; }
+  .margin-left-md { margin-left: $margin-xlg; }
+  .margin-left-lg { margin-left: $margin-xxlg; }
+  .margin-right-xs { margin-right: $margin-xs; }
+  .margin-right-sm { margin-right: $margin-md; }
+  .margin-right-md { margin-right: $margin-xlg; }
+  .margin-right-lg { margin-right: $margin-xxlg; }
+  .margin-top-xs { margin-top: $margin-xs; }
+  .margin-top-sm { margin-top: $margin-md; }
+  .margin-top-md { margin-top: $margin-xlg; }
+  .margin-top-lg { margin-top: $margin-xxlg; }
+  .margin-bottom-xs { margin-bottom: $margin-xs; }
+  .margin-bottom-sm { margin-bottom: $margin-md; }
+  .margin-bottom-md { margin-bottom: $margin-xlg; }
+  .margin-bottom-lg { margin-bottom: $margin-xxlg; }
+  .margin-side-xs { margin: 0 $margin-xs; }
+  .margin-side-sm { margin: 0 $margin-md; }
+  .margin-side-md { margin: 0 $margin-xlg; }
+  .margin-side-lg { margin: 0 $margin-xxlg; }
+  .margin-height-xs { margin: $margin-xs 0; }
+  .margin-height-sm { margin: $margin-md 0; }
+  .margin-height-md { margin: $margin-xlg 0; }
+  .margin-height-lg { margin: $margin-xxlg 0; }
+  .margin-xs { margin: $margin-xs; }
+  .margin-sm { margin: $margin-md; }
+  .margin-md { margin: $margin-xlg; }
+  .margin-lg { margin: $margin-xxlg; }
+
+  /********** PADDING ************/
+
+  .padding-left-xs { padding-left: $padding-xs; }
+  .padding-left-sm { padding-left: $padding-md; }
+  .padding-left-md { padding-left: $padding-xlg; }
+  .padding-left-lg { padding-left: $padding-xxlg; }
+  .padding-right-xs { padding-right: $padding-xs; }
+  .padding-right-sm { padding-right: $padding-md; }
+  .padding-right-md { padding-right: $padding-xlg; }
+  .padding-right-lg { padding-right: $padding-xxlg; }
+  .padding-top-xs { padding-top: $padding-xs; }
+  .padding-top-sm { padding-top: $padding-md; }
+  .padding-top-md { padding-top: $padding-xlg; }
+  .padding-top-lg { padding-top: $padding-xxlg; }
+  .padding-bottom-xs { padding-bottom: $padding-xs; }
+  .padding-bottom-sm { padding-bottom: $padding-md; }
+  .padding-bottom-md { padding-bottom: $padding-xlg; }
+  .padding-bottom-lg { padding-bottom: $padding-xxlg; }
+  .padding-side-xs { padding: 0 $padding-xs; }
+  .padding-side-sm { padding: 0 $padding-md; }
+  .padding-side-md { padding: 0 $padding-xlg; }
+  .padding-side-lg { padding: 0 $padding-xxlg; }
+  .padding-height-xs { padding: $padding-xs 0; }
+  .padding-height-sm { padding: $padding-md 0; }
+  .padding-height-md { padding: $padding-xlg 0; }
+  .padding-height-lg { padding: $padding-xxlg 0; }
+  .padding-xs { padding: $padding-xs; }
+  .padding-sm { padding: $padding-md; }
+  .padding-md { padding: $padding-xlg; }
+  .padding-lg { padding: $padding-xxlg; }
 
   /*** END JAWG STRAP WRAPPER ****/
 }
