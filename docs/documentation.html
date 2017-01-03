@@ -285,7 +285,102 @@
     </div>
   </div>
   <a href="#top" class="top">Back to top</a>
+  <hr>
+  <h2 id="margins">Margin & Padding</h2>
+
+  The margin have 6 differents styles:
+  <ul>
+    <li>left: the margin is applied to the left of the container</li>
+    <li>right: the margin is applied to the right of the container</li>
+    <li>top: the margin is applied to the top of the container</li>
+    <li>bottom: the margin is applied to the bottom of the container</li>
+    <li>size: the margin is applied to the both sides (left & right) of the container</li>
+    <li>height: the margin is applied to the both vertical sides (top & bottom) of the container</li>
+  </ul>
+  And 4 differents sizes:
+  <ul>
+    <li>xs: 6px</li>
+    <li>sm: 10px</li>
+    <li>md: 15px</li>
+    <li>lg: 20px</li>
+  </ul>
+
+  Using the class:
+  <h5>[ <em>margin</em> ]-[ <em>left | right | top | bottom | side | height</em> ]-[ <em>xs | sm | md | lg</em> ]</h5>
+
+  <p class="console">
+    <code>
+      &lt;div class="margin-left-xs" /&gt;&lt;div&gt; &emsp;&emsp;// margin left: 6px <br>
+      &lt;div class="margin-left-sm" /&gt;&lt;div&gt; &emsp;&emsp;// margin left: 10px <br>
+      &lt;div class="margin-left-md" /&gt;&lt;div&gt; &emsp;&emsp;// margin left: 15px <br>
+      &lt;div class="margin-left-lg" /&gt;&lt;div&gt; &emsp;&emsp;// margin left: 20px <br>
+      &lt;div class="margin-right-xs" /&gt;&lt;div&gt; &emsp;&emsp;// margin right: 6px <br>
+      &lt;div class="margin-right-sm" /&gt;&lt;div&gt; &emsp;&emsp;// margin right: 10px <br>
+      &lt;div class="margin-right-md" /&gt;&lt;div&gt; &emsp;&emsp;// margin right: 15px <br>
+      &lt;div class="margin-right-lg" /&gt;&lt;div&gt; &emsp;&emsp;// margin right: 20px <br>
+      &lt;div class="margin-top-xs" /&gt;&lt;div&gt; &emsp;&emsp;// margin top: 6px <br>
+      &lt;div class="margin-top-sm" /&gt;&lt;div&gt; &emsp;&emsp;// margin top: 10px <br>
+      &lt;div class="margin-top-md" /&gt;&lt;div&gt; &emsp;&emsp;// margin top: 15px <br>
+      &lt;div class="margin-top-lg" /&gt;&lt;div&gt; &emsp;&emsp;// margin top: 20px <br>
+      &lt;div class="margin-bottom-xs" /&gt;&lt;div&gt; &emsp;&emsp;// margin bottom: 6px <br>
+      &lt;div class="margin-bottom-sm" /&gt;&lt;div&gt; &emsp;&emsp;// margin bottom: 10px <br>
+      &lt;div class="margin-bottom-md" /&gt;&lt;div&gt; &emsp;&emsp;// margin bottom: 15px <br>
+      &lt;div class="margin-bottom-lg" /&gt;&lt;div&gt; &emsp;&emsp;// margin bottom: 20px <br>
+      &lt;div class="margin-side-xs" /&gt;&lt;div&gt; &emsp;&emsp;// margin side: 6px <br>
+      &lt;div class="margin-side-sm" /&gt;&lt;div&gt; &emsp;&emsp;// margin side: 10px <br>
+      &lt;div class="margin-side-md" /&gt;&lt;div&gt; &emsp;&emsp;// margin side: 15px <br>
+      &lt;div class="margin-side-lg" /&gt;&lt;div&gt; &emsp;&emsp;// margin side: 20px <br>
+      &lt;div class="margin-height-xs" /&gt;&lt;div&gt; &emsp;&emsp;// margin up&down: 6px <br>
+      &lt;div class="margin-height-sm" /&gt;&lt;div&gt; &emsp;&emsp;// margin up&down: 10px <br>
+      &lt;div class="margin-height-md" /&gt;&lt;div&gt; &emsp;&emsp;// margin up&down: 15px <br>
+      &lt;div class="margin-height-lg" /&gt;&lt;div&gt; &emsp;&emsp;// margin up&down: 20px <br>
+      &lt;div class="margin-xs" /&gt;&lt;div&gt; &emsp;&emsp;// margin: 6px <br>
+      &lt;div class="margin-sm" /&gt;&lt;div&gt; &emsp;&emsp;// margin: 10px <br>
+      &lt;div class="margin-md" /&gt;&lt;div&gt; &emsp;&emsp;// margin: 15px <br>
+      &lt;div class="margin-lg" /&gt;&lt;div&gt; &emsp;&emsp;// margin: 20px <br>
+    </code>
+  </p>
+  <div style="color: #1d64d6; margin-left: 20px;">
+    You can also use padding instead of margin !
+  </div>
+  <p class="console">
+    <code>
+      &lt;div class="padding-left-xs" /&gt;&lt;div&gt; &emsp;&emsp;// padding left: 5px<br>
+      &lt;div class="padding-left-sm" /&gt;&lt;div&gt; &emsp;&emsp;// padding left: 8px<br>
+      &lt;div class="padding-left-md" /&gt;&lt;div&gt; &emsp;&emsp;// padding left: 12px<br>
+      &lt;div class="padding-left-lg" /&gt;&lt;div&gt; &emsp;&emsp;// padding left: 14px<br>
+      &lt;div class="padding-right-xs" /&gt;&lt;div&gt; &emsp;&emsp;// padding right: 5px<br>
+      &lt;div class="padding-right-sm" /&gt;&lt;div&gt; &emsp;&emsp;// padding right: 8px<br>
+      &lt;div class="padding-right-md" /&gt;&lt;div&gt; &emsp;&emsp;// padding right: 12px<br>
+      &lt;div class="padding-right-lg" /&gt;&lt;div&gt; &emsp;&emsp;// padding right: 14px<br>
+      &lt;div class="padding-top-xs" /&gt;&lt;div&gt; &emsp;&emsp;// padding top: 5px<br>
+      &lt;div class="padding-top-sm" /&gt;&lt;div&gt; &emsp;&emsp;// padding top: 8px<br>
+      &lt;div class="padding-top-md" /&gt;&lt;div&gt; &emsp;&emsp;// padding top: 12px<br>
+      &lt;div class="padding-top-lg" /&gt;&lt;div&gt; &emsp;&emsp;// padding top: 14px<br>
+      &lt;div class="padding-bottom-xs" /&gt;&lt;div&gt; &emsp;&emsp;// padding bottom: 5px<br>
+      &lt;div class="padding-bottom-sm" /&gt;&lt;div&gt; &emsp;&emsp;// padding bottom: 8px<br>
+      &lt;div class="padding-bottom-md" /&gt;&lt;div&gt; &emsp;&emsp;// padding bottom: 12px<br>
+      &lt;div class="padding-bottom-lg" /&gt;&lt;div&gt; &emsp;&emsp;// padding bottom: 14px<br>
+      &lt;div class="padding-side-xs" /&gt;&lt;div&gt; &emsp;&emsp;// padding side: 5px<br>
+      &lt;div class="padding-side-sm" /&gt;&lt;div&gt; &emsp;&emsp;// padding side: 8px<br>
+      &lt;div class="padding-side-md" /&gt;&lt;div&gt; &emsp;&emsp;// padding side: 12px<br>
+      &lt;div class="padding-side-lg" /&gt;&lt;div&gt; &emsp;&emsp;// padding side: 14px<br>
+      &lt;div class="padding-height-xs" /&gt;&lt;div&gt; &emsp;&emsp;// padding up&down: 5px<br>
+      &lt;div class="padding-height-sm" /&gt;&lt;div&gt; &emsp;&emsp;// padding up&down: 8px<br>
+      &lt;div class="padding-height-md" /&gt;&lt;div&gt; &emsp;&emsp;// padding up&down: 12px<br>
+      &lt;div class="padding-height-lg" /&gt;&lt;div&gt; &emsp;&emsp;// padding up&down: 14px<br>
+      &lt;div class="padding-xs" /&gt;&lt;div&gt; &emsp;&emsp;// padding: 5px<br>
+      &lt;div class="padding-sm" /&gt;&lt;div&gt; &emsp;&emsp;// padding: 8px<br>
+      &lt;div class="padding-md" /&gt;&lt;div&gt; &emsp;&emsp;// padding: 12px<br>
+      &lt;div class="padding-lg" /&gt;&lt;div&gt; &emsp;&emsp;// padding: 14px<br>
+    </code>
+  </p>
+
+  <a href="#top" class="top">Back to top</a>
 </div>
+
+
+
 <footer class="container row centered">
   <div class="panel noborder">
     JawgStrap 1.0</strong> &bullet; Ebusiness Information &bullet; 2016</center>
