@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>JawgStrap 1.0</title>
+  <title>JawgStrap 1.5</title>
   <link rel="stylesheet" href="jawgstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
   <style>
@@ -15,7 +15,7 @@
       width:80% !important;
       margin:auto !important;
       padding:25px 15px !important;
-      background: #efefef !important;
+      background: #fbfbfb !important;
     }
 
     .console{
@@ -46,9 +46,9 @@
     }
   </style>
 </head>
-<body>
+<body id="jwg-strap">
 
-<div id="jwg-strap" class="wrap" >
+<div  class="wrap" >
   <h1 id="top">JawgStrap 1.0 Documentation</h1>
   <ul style="list-style: decimal; font-size: 16px;">
     <li><a href="#started">Getting Started</a></li>
@@ -118,6 +118,20 @@
     <button class="btn btn-xlg btn-error">Test button</button>
   </div>
 
+  <h4>Warning style</h4>
+  <p class="console"><code>
+    &lt;button class="btn btn-xs btn-warning"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-sm btn-warning"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-lg btn-warning"&gt;Test button&lt;/button&gt;<br>
+    &lt;button class="btn btn-xlg btn-warning"&gt;Test button&lt;/button&gt;<br>
+  </code></p>
+  <div>
+    <button class="btn btn-xs btn-warning">Test button</button>
+    <button class="btn btn-sm btn-warning">Test button</button>
+    <button class="btn btn-lg btn-warning">Test button</button>
+    <button class="btn btn-xlg btn-warning">Test button</button>
+  </div>
+
   <h4>Disabled style</h4>
   <p class="console"><code>
     &lt;button class="btn btn-xs btn-disabled"&gt;Test button&lt;/button&gt;<br>
@@ -152,8 +166,29 @@
     <button class="btn btn-lg btn-primary btn-3d">Test button</button>
     <button class="btn btn-lg btn-success btn-3d">Test button</button>
     <button class="btn btn-lg btn-error btn-3d">Test button</button>
+    <button class="btn btn-lg btn-warning btn-3d">Test button</button>
     <button class="btn btn-lg btn-disabled btn-3d">Test button</button>
   </div>
+
+  <a href="#top" class="top">Back to top</a>
+  <hr>
+  <h2 id="textstyle">Text style</h2>
+  <p class="console">
+    <code>
+      &lt;div class="text-success"&gt;This is a success text!&lt;/div&gt;<br>
+      &lt;div class="text-error"&gt;This is an error text!&lt;/div&gt;<br>
+      &lt;div class="text-warning"&gt;This is a warning text!&lt;/div&gt;<br>
+      &lt;div class="text-info"&gt;This is an information text!&lt;/div&gt;<br>
+    </code>
+  </p>
+  <h4>Success text</h4>
+  <div class="text-success">This is a success text!</div>
+  <h4>Error text</h4>
+  <div class="text-error">This is an error text!</div>
+  <h4>Warning text</h4>
+  <div class="text-warning">This is a warning text!</div>
+  <h4>Info text</h4>
+  <div class="text-info">This is an info text!</div>
 
   <a href="#top" class="top">Back to top</a>
   <hr>
@@ -162,6 +197,7 @@
     <code>
       &lt;div class="alert success"&gt;This is a success alert !&lt;/div&gt;<br>
       &lt;div class="alert error"&gt;This is an error alert !&lt;/div&gt;<br>
+      &lt;div class="alert warning"&gt;This is a warning alert !&lt;/div&gt;<br>
       &lt;div class="alert info"&gt;This is an information alert !&lt;/div&gt;<br>
     </code>
   </p>
@@ -169,6 +205,8 @@
   <div class="alert success">This is a success alert !</div>
   <h4>Error alert</h4>
   <div class="alert error">This is an error alert !</div>
+  <h4>Warning alert</h4>
+  <div class="alert warning">This is a warning alert !</div>
   <h4>Info alert</h4>
   <div class="alert info">This is an information alert !</div>
 
@@ -222,7 +260,7 @@
   <u>Code</u>
   
   <pre><p class="console"><code>&lt;div class="container row space-between"&gt;
-  &lt;div class="panel"&gt;
+  &lt;div class="panel clickable"&gt;
     &lt;h2 class="panel-title"&gt;Panel title&lt;/h2&gt;
     This is a clickable Panel
   &lt;/div&gt;
@@ -243,7 +281,7 @@
 
   <u>CSS Specifications :</u>
   <ul>
-    <li><strong>container</strong></li>
+    <li><strong>panel-container</strong></li>
     <ul>
       <li>row : display panels in row direction</li>
       <li>column : display panels in column direction</li>
@@ -259,6 +297,10 @@
         <li>flex-3 : weight of panel</li>
         <li>flex-4 : weight of panel</li>
         <li>flex-5 : weight of panel</li>
+        <li>centered : center content</li>
+        <li>nostyle : avoid background & box-shadow</li>
+        <li>noshadow : avoid box-shadow</li>
+        <li>clickable : add border & cursor</li>
         <li style="list-style: disc"><strong>panel-title</strong></li>
       </ul>
     </ul>
@@ -266,16 +308,16 @@
   </ul>
 
   <u>Example :</u>
-  <div class="container row space-between">
-    <div class="panel clickable">
+  <div class="panel-container row space-between">
+    <div class="panel clickable margin-right-sm">
       <h2 class="panel-title">Panel title</h2>
      This is a clickable Panel
     </div>
-    <div class="panel flex-2">
+    <div class="panel flex-2 margin-right-sm">
       <h2 class="panel-title">Panel title</h2>
       This is a Panel with flex-2 weight
     </div>
-    <div class="panel flex-3">
+    <div class="panel flex-3 margin-right-sm">
       <h2 class="panel-title">Panel title</h2>
       This is a Panel with flex-3 weight
     </div>
@@ -381,9 +423,9 @@
 
 
 
-<footer class="container row centered">
-  <div class="panel noborder">
-    JawgStrap 1.0</strong> &bullet; Ebusiness Information &bullet; 2016</center>
+<footer class="panel-container row centered">
+  <div class="panel padding-md nostyle centered">
+    JawgStrap 1.5</strong> &bullet; &copy; Ebusiness Information &bullet; 2016</center>
   </div>
 </footer>
 </body>

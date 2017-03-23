@@ -18,17 +18,17 @@ $jawgblue-bg: #c9dce8;
 
 $background-lite: #ededed;
 
-$success: #00CC00;
-$success-btn: #43A047;
+$success: #12b90d;
+$success-btn: #45b049;
 $success-highlight: #52b756;
 $success-dark: #0f7a0f;
 $success-bg: #d2e8c9;
 
 $warning: #cc7300;
-$warning-btn: #c97114;
-$warning-highlight: #d18514;
+$warning-btn: #ce8f30;
+$warning-highlight: #dc982e;
 $warning-dark: #a85a10;
-$warning-bg: #f4d9cb;
+$warning-bg: #fadfd1;
 
 $error: #CC0000;
 $error-btn: #b50909;
@@ -36,18 +36,16 @@ $error-highlight: #a01010;
 $error-dark: #700f0f;
 $error-bg: #e8c9c9;
 
+$black-bg: #111111;
 $black-primary: #222222;
 $black-primary-2: #303030;
 $black-secondary: #383838;
 $black-secondary-2: #404040;
-$black-highlight: #555;
+$black-highlight: #616161;
 $btn-highlight: #AAA;
-
 
 $text-color-white: #efefef;
 $text-color-black: #131313;
-
-
 
 /******* PADDING & MARGINS *******/
 $padding-xxs: 4px;
@@ -83,7 +81,6 @@ $font-size-xxlg: 18px;
 $font-size-xxxlg: 20px;
 $font-size-xxxxlg: 50px;
 
-
 /************ MAIN *************/
 html, body {
   width: 100%;
@@ -100,18 +97,20 @@ html, body {
 
   .btn {
     font-size: $font-size-lg;
-    color: $text-color-black;
-    background: #dedede;
-    border: none;
+    color: #9a9a9a;
+    background: #dadada;
+    border: 1px solid #bcbcbc;
     border-radius: 3px;
 
     &.btn-3d {
       box-shadow: 0 4px 0 $btn-highlight;
+      border: 1px solid #444;
     }
 
-    &:hover {
+    &:hover, &:focus {
       background: #eeeeee;
       cursor: pointer;
+      outline: none;
     }
 
     &.btn-xs {
@@ -125,21 +124,22 @@ html, body {
     }
 
     &.btn-lg {
-      padding: $padding-xxlg $padding-xxxlg;
+      padding: $padding-xlg $padding-xxxlg;
       font-size: $font-size-lg;
     }
 
     &.btn-xlg {
-      padding: $margin-xxlg $margin-xxxlg;
+      padding: $margin-xlg $margin-xxxlg;
       font-size: $font-size-xlg;
     }
 
     &.btn-primary {
-      background: $jawgblue;
+      background: #1593c7;
       color: $text-color-white;
+      border: 1px solid #0080b5;
 
-      &:hover {
-        background: $jawgblue-highlight;
+      &:hover, &:focus {
+        background: #0ba0d7;
       }
 
       &.btn-3d {
@@ -150,8 +150,9 @@ html, body {
     &.btn-success {
       background: $success-btn;
       color: $text-color-white;
+      border: 1px solid #009e07;
 
-      &:hover {
+      &:hover, &:focus {
         background: $success-highlight;
       }
 
@@ -161,11 +162,12 @@ html, body {
     }
 
     &.btn-error {
-      background: $error-btn;
+      background: $error-highlight;
       color: $text-color-white;
+      border: 1px solid #9e0007;
 
-      &:hover {
-        background: $error-highlight;
+      &:hover, &:focus {
+        background: $error-btn;
       }
 
       &.btn-3d {
@@ -176,8 +178,9 @@ html, body {
     &.btn-warning {
       background: $warning-btn;
       color: $text-color-white;
+      border: 1px solid #bf8328;
 
-      &:hover {
+      &:hover, &:focus {
         background: $warning-highlight;
       }
 
@@ -191,7 +194,7 @@ html, body {
       color: $black-secondary-2;
       cursor: not-allowed;
 
-      &:hover {
+      &:hover, &:focus {
         background: $black-highlight;
       }
 
@@ -225,6 +228,12 @@ html, body {
       color: $error-highlight;
     }
 
+    &.warning {
+      border: 1px solid $warning-highlight;
+      background: $warning-bg;
+      color: $warning-btn;
+    }
+
     &.success {
       border: 1px solid $success-highlight;
       background: $success-bg;
@@ -238,28 +247,52 @@ html, body {
     }
   }
 
+  /******** TEXT STYLE *********/
+
+  .text-success {
+    color: $success-highlight;
+  }
+  .text-error {
+    color: $error-highlight;
+  }
+  .text-warning {
+    color: $warning-highlight;
+  }
+  .text-info {
+    color: $jawgblue-highlight;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-center {
+    text-align: center;
+  }
+
   /********** TITLES ***********/
   h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     margin: $margin-xs 0;
   }
   h1 {
-    font-size: 2.7em;
+    font-size: 2.6em;
   }
   h2 {
-    font-size: 2.3em;
+    font-size: 2.2em;
   }
   h3 {
-    font-size: 2em;
+    font-size: 1.9em;
   }
   h4 {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
   h5 {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
   h6 {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   hr {
@@ -284,9 +317,10 @@ html, body {
   }
 
   /*********** FORM ************/
-  input[type=submit]{
-    &:focus{
-      border:none;
+  input[type=submit] {
+    &:focus {
+      border: none;
+      outline: none;
     }
   }
   input, textarea, .input {
@@ -294,6 +328,7 @@ html, body {
     background: inherit;
     margin: $padding-xs 0;
     border-radius: 3px;
+    outline: none;
     border: solid 1px #ccc;
     transition: border 300ms ease;
     font-size: 14px;
@@ -334,7 +369,7 @@ html, body {
     }
   }
 
-  .container {
+  .panel-container, .block-container {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
@@ -357,115 +392,244 @@ html, body {
     &.space-around {
       justify-content: space-around;
     }
+  }
 
-    .panel {
-      padding: $padding-md;
-      border: 1px solid $black-secondary-2;
-      border-radius: $radius-md;
-      box-sizing: border-box;
-      margin: $margin-xs;
+  .panel, .block {
+    &.flex-1 {
+      flex: 1;
+    }
+    &.flex-2 {
+      flex: 2;
+    }
+    &.flex-3 {
+      flex: 3;
+    }
+    &.flex-4 {
+      flex: 4;
+    }
+    &.flex-5 {
+      flex: 5;
+    }
 
-      &.clickable {
-        cursor: pointer;
-        &:hover {
-          border: 1px solid $jawgblue;
-        }
+    &.centered {
+      align-self: center;
+    }
+  }
+
+  .panel {
+    padding: $padding-md;
+    border: 1px solid #dedede;
+    border-radius: 1px;
+    box-sizing: border-box;
+    background: #fcfcfc;
+    box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.2);
+
+    &.nostyle {
+      background: transparent;
+      border:none;
+      box-shadow: none;
+    }
+
+    &.noshadow {
+      box-shadow: none;
+    }
+
+    &.clickable {
+      cursor: pointer;
+      &:hover {
+        border: 1px solid $jawgblue;
       }
+    }
 
-      &.noborder {
+    &.noborder {
+      border: none;
+      &:hover {
         border: none;
-        &:hover {
-          border: none;
-        }
       }
+    }
 
-      &.flex-1 {
-        flex: 1;
-      }
-      &.flex-2 {
-        flex: 2;
-      }
-      &.flex-3 {
-        flex: 3;
-      }
-      &.flex-4 {
-        flex: 4;
-      }
-      &.flex-5 {
-        flex: 5;
-      }
-
-      .panel-title {
-        margin: 0 0 $margin-xs;
-        font-size: 30px;
-        font-weight: 300;
-        text-align: left;
-        color: $jawgblue-ui;
-      }
+    .panel-title {
+      margin: 0 0 $margin-xs;
+      font-size: 28px;
+      font-weight: 300;
+      text-align: left;
+      color: #222;
     }
   }
 
   /********** MARGINS ************/
 
-  .margin-left-xs { margin-left: $margin-xs; }
-  .margin-left-sm { margin-left: $margin-md; }
-  .margin-left-md { margin-left: $margin-xlg; }
-  .margin-left-lg { margin-left: $margin-xxlg; }
-  .margin-right-xs { margin-right: $margin-xs; }
-  .margin-right-sm { margin-right: $margin-md; }
-  .margin-right-md { margin-right: $margin-xlg; }
-  .margin-right-lg { margin-right: $margin-xxlg; }
-  .margin-top-xs { margin-top: $margin-xs; }
-  .margin-top-sm { margin-top: $margin-md; }
-  .margin-top-md { margin-top: $margin-xlg; }
-  .margin-top-lg { margin-top: $margin-xxlg; }
-  .margin-bottom-xs { margin-bottom: $margin-xs; }
-  .margin-bottom-sm { margin-bottom: $margin-md; }
-  .margin-bottom-md { margin-bottom: $margin-xlg; }
-  .margin-bottom-lg { margin-bottom: $margin-xxlg; }
-  .margin-side-xs { margin: 0 $margin-xs; }
-  .margin-side-sm { margin: 0 $margin-md; }
-  .margin-side-md { margin: 0 $margin-xlg; }
-  .margin-side-lg { margin: 0 $margin-xxlg; }
-  .margin-height-xs { margin: $margin-xs 0; }
-  .margin-height-sm { margin: $margin-md 0; }
-  .margin-height-md { margin: $margin-xlg 0; }
-  .margin-height-lg { margin: $margin-xxlg 0; }
-  .margin-xs { margin: $margin-xs; }
-  .margin-sm { margin: $margin-md; }
-  .margin-md { margin: $margin-xlg; }
-  .margin-lg { margin: $margin-xxlg; }
+  .margin-left-xs {
+    margin-left: $margin-xs;
+  }
+  .margin-left-sm {
+    margin-left: $margin-md;
+  }
+  .margin-left-md {
+    margin-left: $margin-xlg;
+  }
+  .margin-left-lg {
+    margin-left: $margin-xxlg;
+  }
+  .margin-right-xs {
+    margin-right: $margin-xs;
+  }
+  .margin-right-sm {
+    margin-right: $margin-md;
+  }
+  .margin-right-md {
+    margin-right: $margin-xlg;
+  }
+  .margin-right-lg {
+    margin-right: $margin-xxlg;
+  }
+  .margin-top-xs {
+    margin-top: $margin-xs;
+  }
+  .margin-top-sm {
+    margin-top: $margin-md;
+  }
+  .margin-top-md {
+    margin-top: $margin-xlg;
+  }
+  .margin-top-lg {
+    margin-top: $margin-xxlg;
+  }
+  .margin-bottom-xs {
+    margin-bottom: $margin-xs;
+  }
+  .margin-bottom-sm {
+    margin-bottom: $margin-md;
+  }
+  .margin-bottom-md {
+    margin-bottom: $margin-xlg;
+  }
+  .margin-bottom-lg {
+    margin-bottom: $margin-xxlg;
+  }
+  .margin-side-xs {
+    margin: 0 $margin-xs;
+  }
+  .margin-side-sm {
+    margin: 0 $margin-md;
+  }
+  .margin-side-md {
+    margin: 0 $margin-xlg;
+  }
+  .margin-side-lg {
+    margin: 0 $margin-xxlg;
+  }
+  .margin-height-xs {
+    margin: $margin-xs 0;
+  }
+  .margin-height-sm {
+    margin: $margin-md 0;
+  }
+  .margin-height-md {
+    margin: $margin-xlg 0;
+  }
+  .margin-height-lg {
+    margin: $margin-xxlg 0;
+  }
+  .margin-xs {
+    margin: $margin-xs;
+  }
+  .margin-sm {
+    margin: $margin-md;
+  }
+  .margin-md {
+    margin: $margin-xlg;
+  }
+  .margin-lg {
+    margin: $margin-xxlg;
+  }
 
   /********** PADDING ************/
 
-  .padding-left-xs { padding-left: $padding-xs; }
-  .padding-left-sm { padding-left: $padding-md; }
-  .padding-left-md { padding-left: $padding-xlg; }
-  .padding-left-lg { padding-left: $padding-xxlg; }
-  .padding-right-xs { padding-right: $padding-xs; }
-  .padding-right-sm { padding-right: $padding-md; }
-  .padding-right-md { padding-right: $padding-xlg; }
-  .padding-right-lg { padding-right: $padding-xxlg; }
-  .padding-top-xs { padding-top: $padding-xs; }
-  .padding-top-sm { padding-top: $padding-md; }
-  .padding-top-md { padding-top: $padding-xlg; }
-  .padding-top-lg { padding-top: $padding-xxlg; }
-  .padding-bottom-xs { padding-bottom: $padding-xs; }
-  .padding-bottom-sm { padding-bottom: $padding-md; }
-  .padding-bottom-md { padding-bottom: $padding-xlg; }
-  .padding-bottom-lg { padding-bottom: $padding-xxlg; }
-  .padding-side-xs { padding: 0 $padding-xs; }
-  .padding-side-sm { padding: 0 $padding-md; }
-  .padding-side-md { padding: 0 $padding-xlg; }
-  .padding-side-lg { padding: 0 $padding-xxlg; }
-  .padding-height-xs { padding: $padding-xs 0; }
-  .padding-height-sm { padding: $padding-md 0; }
-  .padding-height-md { padding: $padding-xlg 0; }
-  .padding-height-lg { padding: $padding-xxlg 0; }
-  .padding-xs { padding: $padding-xs; }
-  .padding-sm { padding: $padding-md; }
-  .padding-md { padding: $padding-xlg; }
-  .padding-lg { padding: $padding-xxlg; }
+  .padding-left-xs {
+    padding-left: $padding-xs;
+  }
+  .padding-left-sm {
+    padding-left: $padding-md;
+  }
+  .padding-left-md {
+    padding-left: $padding-xlg;
+  }
+  .padding-left-lg {
+    padding-left: $padding-xxlg;
+  }
+  .padding-right-xs {
+    padding-right: $padding-xs;
+  }
+  .padding-right-sm {
+    padding-right: $padding-md;
+  }
+  .padding-right-md {
+    padding-right: $padding-xlg;
+  }
+  .padding-right-lg {
+    padding-right: $padding-xxlg;
+  }
+  .padding-top-xs {
+    padding-top: $padding-xs;
+  }
+  .padding-top-sm {
+    padding-top: $padding-md;
+  }
+  .padding-top-md {
+    padding-top: $padding-xlg;
+  }
+  .padding-top-lg {
+    padding-top: $padding-xxlg;
+  }
+  .padding-bottom-xs {
+    padding-bottom: $padding-xs;
+  }
+  .padding-bottom-sm {
+    padding-bottom: $padding-md;
+  }
+  .padding-bottom-md {
+    padding-bottom: $padding-xlg;
+  }
+  .padding-bottom-lg {
+    padding-bottom: $padding-xxlg;
+  }
+  .padding-side-xs {
+    padding: 0 $padding-xs;
+  }
+  .padding-side-sm {
+    padding: 0 $padding-md;
+  }
+  .padding-side-md {
+    padding: 0 $padding-xlg;
+  }
+  .padding-side-lg {
+    padding: 0 $padding-xxlg;
+  }
+  .padding-height-xs {
+    padding: $padding-xs 0;
+  }
+  .padding-height-sm {
+    padding: $padding-md 0;
+  }
+  .padding-height-md {
+    padding: $padding-xlg 0;
+  }
+  .padding-height-lg {
+    padding: $padding-xxlg 0;
+  }
+  .padding-xs {
+    padding: $padding-xs;
+  }
+  .padding-sm {
+    padding: $padding-md;
+  }
+  .padding-md {
+    padding: $padding-xlg;
+  }
+  .padding-lg {
+    padding: $padding-xxlg;
+  }
 
   /*** END JAWG STRAP WRAPPER ****/
 }
