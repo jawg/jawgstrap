@@ -1,0 +1,21 @@
+{
+  "name": "jawgstrap",
+  "version": "1.5.0",
+  "description": "Jawgstrap is a sass theme for Jawg applications.",
+  "main": "jawgstrap.scss",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.team.jawg.io:websites/jawgstrap.git"
+  },
+  "keywords": [
+    "jawgstrap"
+  ],
+  "author": "Antoine Lebel",
+  "license": "MIT"
+}
