@@ -100,6 +100,7 @@ html, body {
     color: #9a9a9a;
     background: #dadada;
     border: 1px solid #bcbcbc;
+    border: none;
     border-radius: 3px;
 
     &.btn-3d {
@@ -141,7 +142,8 @@ html, body {
     &.btn-primary {
       background: #1593c7;
       color: $text-color-white;
-      border: 1px solid #0080b5;
+      //border: 1px solid #0080b5;
+      border: none;
 
       &:hover, &:focus {
         background: #0ba0d7;
@@ -155,7 +157,8 @@ html, body {
     &.btn-success {
       background: $success-btn;
       color: $text-color-white;
-      border: 1px solid #009e07;
+      //border: 1px solid #009e07;
+      border: none;
 
       &:hover, &:focus {
         background: $success-highlight;
@@ -167,12 +170,13 @@ html, body {
     }
 
     &.btn-error, &.btn-danger {
-      background: $error-highlight;
+      background: #d23d3d;
       color: $text-color-white;
-      border: 1px solid #9e0007;
+      //border: 1px solid #9e0007;
+      border: none;
 
       &:hover, &:focus {
-        background: $error-btn;
+        background: #ff3737;
       }
 
       &.btn-3d {
@@ -183,7 +187,8 @@ html, body {
     &.btn-warning {
       background: $warning-btn;
       color: $text-color-white;
-      border: 1px solid #bf8328;
+      //border: 1px solid #bf8328;
+      border: none;
 
       &:hover, &:focus {
         background: $warning-highlight;
@@ -450,7 +455,7 @@ html, body {
 
     &.nostyle {
       background: transparent;
-      border:none;
+      border: none;
       box-shadow: none;
     }
 

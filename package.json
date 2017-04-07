@@ -1,6 +1,6 @@
 {
   "name": "jawgstrap",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Jawgstrap is a sass theme for Jawg applications.",
   "main": "jawgstrap.scss",
   "directories": {
