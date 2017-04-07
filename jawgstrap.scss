@@ -92,7 +92,7 @@ html, body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-#jwg-strap {
+#jwg-strap, .jwg-strap {
   /********** BUTTONS ************/
 
   .btn {
@@ -120,6 +120,11 @@ html, body {
 
     &.btn-sm {
       padding: $padding-lg $padding-xlg;
+      font-size: $font-size-md;
+    }
+
+    &.btn-md {
+      padding: $padding-lg $padding-xxlg;
       font-size: $font-size-md;
     }
 
@@ -161,7 +166,7 @@ html, body {
       }
     }
 
-    &.btn-error {
+    &.btn-error, &.btn-danger {
       background: $error-highlight;
       color: $text-color-white;
       border: 1px solid #9e0007;
@@ -222,7 +227,7 @@ html, body {
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera, IE 8+ */
 
-    &.error {
+    &.error, &.danger {
       border: 1px solid $error-highlight;
       background: $error-bg;
       color: $error-highlight;
@@ -252,7 +257,7 @@ html, body {
   .text-success {
     color: $success-highlight;
   }
-  .text-error {
+  .text-error, .text-danger {
     color: $error-highlight;
   }
   .text-warning {
@@ -269,6 +274,21 @@ html, body {
   }
   .text-center {
     text-align: center;
+  }
+  .pull-right {
+    float: right;
+  }
+  .pull-left {
+    float: left
+  }
+  .clearfix, .clear {
+    clear: both;
+  }
+  .clear-left {
+    clear: left;
+  }
+  .clear-right {
+    clear: right;
   }
 
   /********** TITLES ***********/
@@ -295,7 +315,7 @@ html, body {
     font-size: 1.3em;
   }
 
-  hr {
+  .hr {
     display: block;
     margin: 20px 0;
     padding: 0;
@@ -351,7 +371,7 @@ html, body {
       line-height: 25px;
     }
 
-    &.fullsize {
+    &.fullsize, &.fullwidth {
       width: 100%;
     }
 
@@ -392,6 +412,10 @@ html, body {
     &.space-around {
       justify-content: space-around;
     }
+  }
+
+  .flexible {
+    display: flex;
   }
 
   .panel, .block, .panel-container {

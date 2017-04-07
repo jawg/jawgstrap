@@ -1,6 +1,6 @@
 {
   "name": "jawgstrap",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Jawgstrap is a sass theme for Jawg applications.",
   "main": "jawgstrap.scss",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.team.jawg.io:websites/jawgstrap.git"
+    "url": "git@github.com:jawg/jawgstrap.git"
   },
   "keywords": [
     "jawgstrap"
