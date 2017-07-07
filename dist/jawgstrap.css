@@ -1,78 +1,106 @@
 /***********************************/
 /********** JAWG STRAP *************/
 /***********************************/
+/*/
+ * Created by Antoine Lebel - Ebusiness Information 2016
+ * Created & designed for JawgMaps webapps
+/*/
 /************* COLORS **************/
 /******* PADDING & MARGINS *******/
 /********** FONT-SIZE ***********/
-#jwg-strap {
-  /************ MAIN *************/
+/************ MAIN *************/
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+
+#jwg-strap, .jwg-strap {
   /********** BUTTONS ************/
   /********** ALERTS ***********/
+  /******** TEXT STYLE *********/
   /********** TITLES ***********/
   /*********** FORM ************/
+  /********** MARGINS ************/
+  /********** PADDING ************/
   /*** END JAWG STRAP WRAPPER ****/ }
-  #jwg-strap html, #jwg-strap body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif; }
-  #jwg-strap .btn {
-    font-size: 13px;
-    color: #131313;
-    background: #dedede;
+  #jwg-strap .btn, .jwg-strap .btn {
+    font-size: 14px;
+    color: #9a9a9a;
+    background: #dadada;
+    border: 1px solid #bcbcbc;
     border: none;
     border-radius: 3px; }
-    #jwg-strap .btn:hover {
-      background: #cfcfcf;
-      cursor: pointer; }
-    #jwg-strap .btn.btn-xs {
+    #jwg-strap .btn.btn-3d, .jwg-strap .btn.btn-3d {
+      box-shadow: 0 4px 0 #AAA;
+      border: 1px solid #444; }
+    #jwg-strap .btn:hover, #jwg-strap .btn:focus, .jwg-strap .btn:hover, .jwg-strap .btn:focus {
+      background: #eeeeee;
+      cursor: pointer;
+      outline: none; }
+    #jwg-strap .btn.btn-xs, .jwg-strap .btn.btn-xs {
       padding: 5px 6px;
       font-size: 12px; }
-    #jwg-strap .btn.btn-sm {
+    #jwg-strap .btn.btn-sm, .jwg-strap .btn.btn-sm {
       padding: 10px 12px;
       font-size: 13px; }
-    #jwg-strap .btn.btn-lg {
-      padding: 14px 16px;
+    #jwg-strap .btn.btn-md, .jwg-strap .btn.btn-md {
+      padding: 10px 14px;
+      font-size: 13px; }
+    #jwg-strap .btn.btn-lg, .jwg-strap .btn.btn-lg {
+      padding: 12px 16px;
       font-size: 14px; }
-    #jwg-strap .btn.btn-xlg {
-      padding: 20px 25px;
+    #jwg-strap .btn.btn-xlg, .jwg-strap .btn.btn-xlg {
+      padding: 15px 25px;
       font-size: 16px; }
-    #jwg-strap .btn.btn-primary {
-      background: #0099D8;
-      color: #efefef; }
-      #jwg-strap .btn.btn-primary:hover {
-        background: #0070CE; }
-      #jwg-strap .btn.btn-primary.btn-3d {
+    #jwg-strap .btn.btn-primary, .jwg-strap .btn.btn-primary {
+      background: #1593c7;
+      color: #efefef;
+      border: none; }
+      #jwg-strap .btn.btn-primary:hover, #jwg-strap .btn.btn-primary:focus, .jwg-strap .btn.btn-primary:hover, .jwg-strap .btn.btn-primary:focus {
+        background: #0ba0d7; }
+      #jwg-strap .btn.btn-primary.btn-3d, .jwg-strap .btn.btn-primary.btn-3d {
         box-shadow: 0 4px 0 #005e85; }
-    #jwg-strap .btn.btn-success {
-      background: #38c13d;
-      color: #efefef; }
-      #jwg-strap .btn.btn-success:hover {
-        background: #0d9e0d; }
-      #jwg-strap .btn.btn-success.btn-3d {
+    #jwg-strap .btn.btn-success, .jwg-strap .btn.btn-success {
+      background: #45b049;
+      color: #efefef;
+      border: none; }
+      #jwg-strap .btn.btn-success:hover, #jwg-strap .btn.btn-success:focus, .jwg-strap .btn.btn-success:hover, .jwg-strap .btn.btn-success:focus {
+        background: #52b756; }
+      #jwg-strap .btn.btn-success.btn-3d, .jwg-strap .btn.btn-success.btn-3d {
         box-shadow: 0 4px 0 #0f7a0f; }
-    #jwg-strap .btn.btn-error {
-      background: #b50909;
-      color: #efefef; }
-      #jwg-strap .btn.btn-error:hover {
-        background: #a01010; }
-      #jwg-strap .btn.btn-error.btn-3d {
+    #jwg-strap .btn.btn-error, #jwg-strap .btn.btn-danger, .jwg-strap .btn.btn-error, .jwg-strap .btn.btn-danger {
+      background: #d23d3d;
+      color: #efefef;
+      border: none; }
+      #jwg-strap .btn.btn-error:hover, #jwg-strap .btn.btn-error:focus, #jwg-strap .btn.btn-danger:hover, #jwg-strap .btn.btn-danger:focus, .jwg-strap .btn.btn-error:hover, .jwg-strap .btn.btn-error:focus, .jwg-strap .btn.btn-danger:hover, .jwg-strap .btn.btn-danger:focus {
+        background: #ff3737; }
+      #jwg-strap .btn.btn-error.btn-3d, #jwg-strap .btn.btn-danger.btn-3d, .jwg-strap .btn.btn-error.btn-3d, .jwg-strap .btn.btn-danger.btn-3d {
         box-shadow: 0 4px 0 #700f0f; }
-    #jwg-strap .btn.btn-disabled {
-      background: #555;
+    #jwg-strap .btn.btn-warning, .jwg-strap .btn.btn-warning {
+      background: #ce8f30;
+      color: #efefef;
+      border: none; }
+      #jwg-strap .btn.btn-warning:hover, #jwg-strap .btn.btn-warning:focus, .jwg-strap .btn.btn-warning:hover, .jwg-strap .btn.btn-warning:focus {
+        background: #dc982e; }
+      #jwg-strap .btn.btn-warning.btn-3d, .jwg-strap .btn.btn-warning.btn-3d {
+        box-shadow: 0 4px 0 #a85a10; }
+    #jwg-strap .btn.btn-disabled, .jwg-strap .btn.btn-disabled {
+      background: #616161;
       color: #404040;
       cursor: not-allowed; }
-      #jwg-strap .btn.btn-disabled:hover {
-        background: #555; }
-      #jwg-strap .btn.btn-disabled.btn-3d {
+      #jwg-strap .btn.btn-disabled:hover, #jwg-strap .btn.btn-disabled:focus, .jwg-strap .btn.btn-disabled:hover, .jwg-strap .btn.btn-disabled:focus {
+        background: #616161; }
+      #jwg-strap .btn.btn-disabled.btn-3d, .jwg-strap .btn.btn-disabled.btn-3d {
         box-shadow: 0 4px 0 #404040; }
-    #jwg-strap .btn.btn-3d:active:not(.btn-disabled) {
+    #jwg-strap .btn.btn-3d:active:not(.btn-disabled), .jwg-strap .btn.btn-3d:active:not(.btn-disabled) {
       position: relative;
       top: 2px;
       box-shadow: 0 2px 0 #333; }
-  #jwg-strap .alert {
+  #jwg-strap .alert, .jwg-strap .alert {
     width: 100%;
     margin: 10px 0;
     padding: 8px;
@@ -85,34 +113,62 @@
     /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera, IE 8+ */ }
-    #jwg-strap .alert.error {
+    #jwg-strap .alert.error, #jwg-strap .alert.danger, .jwg-strap .alert.error, .jwg-strap .alert.danger {
       border: 1px solid #a01010;
       background: #e8c9c9;
       color: #a01010; }
-    #jwg-strap .alert.success {
-      border: 1px solid #0d9e0d;
+    #jwg-strap .alert.warning, .jwg-strap .alert.warning {
+      border: 1px solid #dc982e;
+      background: #fadfd1;
+      color: #ce8f30; }
+    #jwg-strap .alert.success, .jwg-strap .alert.success {
+      border: 1px solid #52b756;
       background: #d2e8c9;
-      color: #0d9e0d; }
-    #jwg-strap .alert.info {
-      border: 1px solid #0070CE;
+      color: #52b756; }
+    #jwg-strap .alert.info, .jwg-strap .alert.info {
+      border: 1px solid #1dabe5;
       background: #c9dce8;
-      color: #0070CE; }
-  #jwg-strap h1, #jwg-strap h2, #jwg-strap h3, #jwg-strap h4, #jwg-strap h5, #jwg-strap h6 {
+      color: #1dabe5; }
+  #jwg-strap .text-success, .jwg-strap .text-success {
+    color: #52b756; }
+  #jwg-strap .text-error, #jwg-strap .text-danger, .jwg-strap .text-error, .jwg-strap .text-danger {
+    color: #a01010; }
+  #jwg-strap .text-warning, .jwg-strap .text-warning {
+    color: #dc982e; }
+  #jwg-strap .text-info, .jwg-strap .text-info {
+    color: #1dabe5; }
+  #jwg-strap .text-right, .jwg-strap .text-right {
+    text-align: right; }
+  #jwg-strap .text-left, .jwg-strap .text-left {
+    text-align: left; }
+  #jwg-strap .text-center, .jwg-strap .text-center {
+    text-align: center; }
+  #jwg-strap .pull-right, .jwg-strap .pull-right {
+    float: right; }
+  #jwg-strap .pull-left, .jwg-strap .pull-left {
+    float: left; }
+  #jwg-strap .clearfix, #jwg-strap .clear, .jwg-strap .clearfix, .jwg-strap .clear {
+    clear: both; }
+  #jwg-strap .clear-left, .jwg-strap .clear-left {
+    clear: left; }
+  #jwg-strap .clear-right, .jwg-strap .clear-right {
+    clear: right; }
+  #jwg-strap h1, #jwg-strap h2, #jwg-strap h3, #jwg-strap h4, #jwg-strap h5, #jwg-strap h6, .jwg-strap h1, .jwg-strap h2, .jwg-strap h3, .jwg-strap h4, .jwg-strap h5, .jwg-strap h6 {
     font-weight: 300;
-    margin: 10px 0; }
-  #jwg-strap h1 {
+    margin: 6px 0; }
+  #jwg-strap h1, .jwg-strap h1 {
+    font-size: 2.6em; }
+  #jwg-strap h2, .jwg-strap h2 {
     font-size: 2.2em; }
-  #jwg-strap h2 {
-    font-size: 2em; }
-  #jwg-strap h3 {
-    font-size: 1.8em; }
-  #jwg-strap h4 {
-    font-size: 1.6em; }
-  #jwg-strap h5 {
-    font-size: 1.4em; }
-  #jwg-strap h6 {
-    font-size: 1.2em; }
-  #jwg-strap hr {
+  #jwg-strap h3, .jwg-strap h3 {
+    font-size: 1.9em; }
+  #jwg-strap h4, .jwg-strap h4 {
+    font-size: 1.7em; }
+  #jwg-strap h5, .jwg-strap h5 {
+    font-size: 1.5em; }
+  #jwg-strap h6, .jwg-strap h6 {
+    font-size: 1.3em; }
+  #jwg-strap hr, #jwg-strap .hr, .jwg-strap hr, .jwg-strap .hr {
     display: block;
     margin: 20px 0;
     padding: 0;
@@ -120,17 +176,22 @@
     background: #666;
     height: 1px;
     border: 0; }
-  #jwg-strap a {
-    text-decoration: none; }
-    #jwg-strap a:visited {
+  #jwg-strap a, .jwg-strap a {
+    text-decoration: none;
+    color: inherit; }
+    #jwg-strap a:visited, .jwg-strap a:visited {
       color: inherit; }
-    #jwg-strap a:hover {
+    #jwg-strap a:hover, .jwg-strap a:hover {
       color: #0099D8; }
-  #jwg-strap input, #jwg-strap textarea, #jwg-strap .input {
+  #jwg-strap input[type=submit]:focus, .jwg-strap input[type=submit]:focus {
+    border: none;
+    outline: none; }
+  #jwg-strap input, #jwg-strap textarea, #jwg-strap .input, .jwg-strap input, .jwg-strap textarea, .jwg-strap .input {
     padding: 8px;
     background: inherit;
     margin: 5px 0;
     border-radius: 3px;
+    outline: none;
     border: solid 1px #ccc;
     transition: border 300ms ease;
     font-size: 14px;
@@ -139,66 +200,191 @@
     -moz-box-sizing: border-box;
     /* Firefox, other Gecko */
     box-sizing: border-box;
-    /* Opera, IE 8+ */
-    -webkit-appearance: none;
-    /* Override behavior on iOS search input which add rounded corners */ }
-    #jwg-strap input.lg, #jwg-strap textarea.lg, #jwg-strap .input.lg {
+    /* Opera, IE 8+ */ }
+    #jwg-strap input.lg, #jwg-strap textarea.lg, #jwg-strap .input.lg, .jwg-strap input.lg, .jwg-strap textarea.lg, .jwg-strap .input.lg {
       padding: 12px; }
-    #jwg-strap input.fullsize, #jwg-strap textarea.fullsize, #jwg-strap .input.fullsize {
+    #jwg-strap input.md, #jwg-strap textarea.md, #jwg-strap .input.md, .jwg-strap input.md, .jwg-strap textarea.md, .jwg-strap .input.md {
+      padding: 6px; }
+    #jwg-strap input.sm, #jwg-strap textarea.sm, #jwg-strap .input.sm, .jwg-strap input.sm, .jwg-strap textarea.sm, .jwg-strap .input.sm {
+      padding: 4px;
+      height: 37px;
+      line-height: 25px; }
+    #jwg-strap input.fullsize, #jwg-strap input.fullwidth, #jwg-strap textarea.fullsize, #jwg-strap textarea.fullwidth, #jwg-strap .input.fullsize, #jwg-strap .input.fullwidth, .jwg-strap input.fullsize, .jwg-strap input.fullwidth, .jwg-strap textarea.fullsize, .jwg-strap textarea.fullwidth, .jwg-strap .input.fullsize, .jwg-strap .input.fullwidth {
       width: 100%; }
-    #jwg-strap input:focus, #jwg-strap textarea:focus, #jwg-strap .input:focus {
+    #jwg-strap input:focus, #jwg-strap textarea:focus, #jwg-strap .input:focus, .jwg-strap input:focus, .jwg-strap textarea:focus, .jwg-strap .input:focus {
       border: 1px solid #0099D8; }
-    #jwg-strap input.error, #jwg-strap textarea.error, #jwg-strap .input.error {
+    #jwg-strap input.error, #jwg-strap textarea.error, #jwg-strap .input.error, .jwg-strap input.error, .jwg-strap textarea.error, .jwg-strap .input.error {
       border: 1px solid #CC0000;
       color: #CC0000; }
-    #jwg-strap input.success, #jwg-strap textarea.success, #jwg-strap .input.success {
-      border: 1px solid #00CC00;
-      color: #00CC00; }
-  #jwg-strap .container {
+    #jwg-strap input.success, #jwg-strap textarea.success, #jwg-strap .input.success, .jwg-strap input.success, .jwg-strap textarea.success, .jwg-strap .input.success {
+      border: 1px solid #12b90d;
+      color: #12b90d; }
+  #jwg-strap .panel-container, #jwg-strap .block-container, .jwg-strap .panel-container, .jwg-strap .block-container {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap; }
-    #jwg-strap .container.nowrap {
+    #jwg-strap .panel-container.nowrap, #jwg-strap .block-container.nowrap, .jwg-strap .panel-container.nowrap, .jwg-strap .block-container.nowrap {
       flex-wrap: nowrap; }
-    #jwg-strap .container.row {
+    #jwg-strap .panel-container.row, #jwg-strap .block-container.row, .jwg-strap .panel-container.row, .jwg-strap .block-container.row {
       flex-direction: row; }
-    #jwg-strap .container.column {
+    #jwg-strap .panel-container.column, #jwg-strap .block-container.column, .jwg-strap .panel-container.column, .jwg-strap .block-container.column {
       flex-direction: column; }
-    #jwg-strap .container.centered {
+    #jwg-strap .panel-container.centered, #jwg-strap .block-container.centered, .jwg-strap .panel-container.centered, .jwg-strap .block-container.centered {
       justify-content: center; }
-    #jwg-strap .container.space-between {
+    #jwg-strap .panel-container.space-between, #jwg-strap .block-container.space-between, .jwg-strap .panel-container.space-between, .jwg-strap .block-container.space-between {
       justify-content: space-between; }
-    #jwg-strap .container.space-around {
+    #jwg-strap .panel-container.space-around, #jwg-strap .block-container.space-around, .jwg-strap .panel-container.space-around, .jwg-strap .block-container.space-around {
       justify-content: space-around; }
-    #jwg-strap .container .panel {
-      padding: 8px;
-      border: 1px solid #404040;
-      border-radius: 6px;
-      box-sizing: border-box;
-      margin: 6px; }
-      #jwg-strap .container .panel.clickable {
-        cursor: pointer; }
-        #jwg-strap .container .panel.clickable:hover {
-          border: 1px solid #0099D8; }
-      #jwg-strap .container .panel.noborder {
+  #jwg-strap .flexible, .jwg-strap .flexible {
+    display: flex; }
+  #jwg-strap .panel.flex-1, #jwg-strap .block.flex-1, #jwg-strap .panel-container.flex-1, .jwg-strap .panel.flex-1, .jwg-strap .block.flex-1, .jwg-strap .panel-container.flex-1 {
+    flex: 1; }
+  #jwg-strap .panel.flex-2, #jwg-strap .block.flex-2, #jwg-strap .panel-container.flex-2, .jwg-strap .panel.flex-2, .jwg-strap .block.flex-2, .jwg-strap .panel-container.flex-2 {
+    flex: 2; }
+  #jwg-strap .panel.flex-3, #jwg-strap .block.flex-3, #jwg-strap .panel-container.flex-3, .jwg-strap .panel.flex-3, .jwg-strap .block.flex-3, .jwg-strap .panel-container.flex-3 {
+    flex: 3; }
+  #jwg-strap .panel.flex-4, #jwg-strap .block.flex-4, #jwg-strap .panel-container.flex-4, .jwg-strap .panel.flex-4, .jwg-strap .block.flex-4, .jwg-strap .panel-container.flex-4 {
+    flex: 4; }
+  #jwg-strap .panel.flex-5, #jwg-strap .block.flex-5, #jwg-strap .panel-container.flex-5, .jwg-strap .panel.flex-5, .jwg-strap .block.flex-5, .jwg-strap .panel-container.flex-5 {
+    flex: 5; }
+  #jwg-strap .panel.centered, #jwg-strap .block.centered, #jwg-strap .panel-container.centered, .jwg-strap .panel.centered, .jwg-strap .block.centered, .jwg-strap .panel-container.centered {
+    align-self: center; }
+  #jwg-strap .panel, .jwg-strap .panel {
+    padding: 8px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background: #fcfcfc;
+    box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.2); }
+    #jwg-strap .panel.nostyle, .jwg-strap .panel.nostyle {
+      background: transparent;
+      border: none;
+      box-shadow: none; }
+    #jwg-strap .panel.noshadow, .jwg-strap .panel.noshadow {
+      box-shadow: none; }
+    #jwg-strap .panel.clickable, .jwg-strap .panel.clickable {
+      cursor: pointer; }
+      #jwg-strap .panel.clickable:hover, .jwg-strap .panel.clickable:hover {
+        border: 1px solid #0099D8; }
+    #jwg-strap .panel.noborder, .jwg-strap .panel.noborder {
+      border: none; }
+      #jwg-strap .panel.noborder:hover, .jwg-strap .panel.noborder:hover {
         border: none; }
-        #jwg-strap .container .panel.noborder:hover {
-          border: none; }
-      #jwg-strap .container .panel.flex-1 {
-        flex: 1; }
-      #jwg-strap .container .panel.flex-2 {
-        flex: 2; }
-      #jwg-strap .container .panel.flex-3 {
-        flex: 3; }
-      #jwg-strap .container .panel.flex-4 {
-        flex: 4; }
-      #jwg-strap .container .panel.flex-5 {
-        flex: 5; }
-      #jwg-strap .container .panel .panel-title {
-        margin: 0 0 6px;
-        font-size: 30px;
-        font-weight: 300;
-        text-align: left;
-        color: #2175bf; }
-
-/*# sourceMappingURL=jawgstrap.css.map */
+    #jwg-strap .panel .panel-title, .jwg-strap .panel .panel-title {
+      margin: 0 0 6px;
+      font-size: 28px;
+      font-weight: 300;
+      text-align: left;
+      color: #222; }
+  #jwg-strap .margin-left-xs, .jwg-strap .margin-left-xs {
+    margin-left: 6px; }
+  #jwg-strap .margin-left-sm, .jwg-strap .margin-left-sm {
+    margin-left: 10px; }
+  #jwg-strap .margin-left-md, .jwg-strap .margin-left-md {
+    margin-left: 15px; }
+  #jwg-strap .margin-left-lg, .jwg-strap .margin-left-lg {
+    margin-left: 20px; }
+  #jwg-strap .margin-right-xs, .jwg-strap .margin-right-xs {
+    margin-right: 6px; }
+  #jwg-strap .margin-right-sm, .jwg-strap .margin-right-sm {
+    margin-right: 10px; }
+  #jwg-strap .margin-right-md, .jwg-strap .margin-right-md {
+    margin-right: 15px; }
+  #jwg-strap .margin-right-lg, .jwg-strap .margin-right-lg {
+    margin-right: 20px; }
+  #jwg-strap .margin-top-xs, .jwg-strap .margin-top-xs {
+    margin-top: 6px; }
+  #jwg-strap .margin-top-sm, .jwg-strap .margin-top-sm {
+    margin-top: 10px; }
+  #jwg-strap .margin-top-md, .jwg-strap .margin-top-md {
+    margin-top: 15px; }
+  #jwg-strap .margin-top-lg, .jwg-strap .margin-top-lg {
+    margin-top: 20px; }
+  #jwg-strap .margin-bottom-xs, .jwg-strap .margin-bottom-xs {
+    margin-bottom: 6px; }
+  #jwg-strap .margin-bottom-sm, .jwg-strap .margin-bottom-sm {
+    margin-bottom: 10px; }
+  #jwg-strap .margin-bottom-md, .jwg-strap .margin-bottom-md {
+    margin-bottom: 15px; }
+  #jwg-strap .margin-bottom-lg, .jwg-strap .margin-bottom-lg {
+    margin-bottom: 20px; }
+  #jwg-strap .margin-side-xs, .jwg-strap .margin-side-xs {
+    margin: 0 6px; }
+  #jwg-strap .margin-side-sm, .jwg-strap .margin-side-sm {
+    margin: 0 10px; }
+  #jwg-strap .margin-side-md, .jwg-strap .margin-side-md {
+    margin: 0 15px; }
+  #jwg-strap .margin-side-lg, .jwg-strap .margin-side-lg {
+    margin: 0 20px; }
+  #jwg-strap .margin-height-xs, .jwg-strap .margin-height-xs {
+    margin: 6px 0; }
+  #jwg-strap .margin-height-sm, .jwg-strap .margin-height-sm {
+    margin: 10px 0; }
+  #jwg-strap .margin-height-md, .jwg-strap .margin-height-md {
+    margin: 15px 0; }
+  #jwg-strap .margin-height-lg, .jwg-strap .margin-height-lg {
+    margin: 20px 0; }
+  #jwg-strap .margin-xs, .jwg-strap .margin-xs {
+    margin: 6px; }
+  #jwg-strap .margin-sm, .jwg-strap .margin-sm {
+    margin: 10px; }
+  #jwg-strap .margin-md, .jwg-strap .margin-md {
+    margin: 15px; }
+  #jwg-strap .margin-lg, .jwg-strap .margin-lg {
+    margin: 20px; }
+  #jwg-strap .padding-left-xs, .jwg-strap .padding-left-xs {
+    padding-left: 5px; }
+  #jwg-strap .padding-left-sm, .jwg-strap .padding-left-sm {
+    padding-left: 8px; }
+  #jwg-strap .padding-left-md, .jwg-strap .padding-left-md {
+    padding-left: 12px; }
+  #jwg-strap .padding-left-lg, .jwg-strap .padding-left-lg {
+    padding-left: 14px; }
+  #jwg-strap .padding-right-xs, .jwg-strap .padding-right-xs {
+    padding-right: 5px; }
+  #jwg-strap .padding-right-sm, .jwg-strap .padding-right-sm {
+    padding-right: 8px; }
+  #jwg-strap .padding-right-md, .jwg-strap .padding-right-md {
+    padding-right: 12px; }
+  #jwg-strap .padding-right-lg, .jwg-strap .padding-right-lg {
+    padding-right: 14px; }
+  #jwg-strap .padding-top-xs, .jwg-strap .padding-top-xs {
+    padding-top: 5px; }
+  #jwg-strap .padding-top-sm, .jwg-strap .padding-top-sm {
+    padding-top: 8px; }
+  #jwg-strap .padding-top-md, .jwg-strap .padding-top-md {
+    padding-top: 12px; }
+  #jwg-strap .padding-top-lg, .jwg-strap .padding-top-lg {
+    padding-top: 14px; }
+  #jwg-strap .padding-bottom-xs, .jwg-strap .padding-bottom-xs {
+    padding-bottom: 5px; }
+  #jwg-strap .padding-bottom-sm, .jwg-strap .padding-bottom-sm {
+    padding-bottom: 8px; }
+  #jwg-strap .padding-bottom-md, .jwg-strap .padding-bottom-md {
+    padding-bottom: 12px; }
+  #jwg-strap .padding-bottom-lg, .jwg-strap .padding-bottom-lg {
+    padding-bottom: 14px; }
+  #jwg-strap .padding-side-xs, .jwg-strap .padding-side-xs {
+    padding: 0 5px; }
+  #jwg-strap .padding-side-sm, .jwg-strap .padding-side-sm {
+    padding: 0 8px; }
+  #jwg-strap .padding-side-md, .jwg-strap .padding-side-md {
+    padding: 0 12px; }
+  #jwg-strap .padding-side-lg, .jwg-strap .padding-side-lg {
+    padding: 0 14px; }
+  #jwg-strap .padding-height-xs, .jwg-strap .padding-height-xs {
+    padding: 5px 0; }
+  #jwg-strap .padding-height-sm, .jwg-strap .padding-height-sm {
+    padding: 8px 0; }
+  #jwg-strap .padding-height-md, .jwg-strap .padding-height-md {
+    padding: 12px 0; }
+  #jwg-strap .padding-height-lg, .jwg-strap .padding-height-lg {
+    padding: 14px 0; }
+  #jwg-strap .padding-xs, .jwg-strap .padding-xs {
+    padding: 5px; }
+  #jwg-strap .padding-sm, .jwg-strap .padding-sm {
+    padding: 8px; }
+  #jwg-strap .padding-md, .jwg-strap .padding-md {
+    padding: 12px; }
+  #jwg-strap .padding-lg, .jwg-strap .padding-lg {
+    padding: 14px; }
