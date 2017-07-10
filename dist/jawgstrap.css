@@ -2,8 +2,8 @@
 /********** JAWG STRAP *************/
 /***********************************/
 /*/
- * Created by Antoine Lebel - Ebusiness Information 2016
- * Created & designed for JawgMaps webapps
+ * Created by Antoine Lebel - Jawg 2017
+ * Created & designed for JawgMaps
 /*/
 /************* COLORS **************/
 /******* PADDING & MARGINS *******/
@@ -29,9 +29,8 @@ html, body {
   /*** END JAWG STRAP WRAPPER ****/ }
   #jwg-strap .btn, .jwg-strap .btn {
     font-size: 14px;
-    color: #9a9a9a;
+    color: #eee;
     background: #dadada;
-    border: 1px solid #bcbcbc;
     border: none;
     border-radius: 3px; }
     #jwg-strap .btn.btn-3d, .jwg-strap .btn.btn-3d {
@@ -40,6 +39,7 @@ html, body {
     #jwg-strap .btn:hover, #jwg-strap .btn:focus, .jwg-strap .btn:hover, .jwg-strap .btn:focus {
       background: #eeeeee;
       cursor: pointer;
+      color: #fff;
       outline: none; }
     #jwg-strap .btn.btn-xs, .jwg-strap .btn.btn-xs {
       padding: 5px 6px;
@@ -100,6 +100,33 @@ html, body {
       position: relative;
       top: 2px;
       box-shadow: 0 2px 0 #333; }
+  #jwg-strap .btn-group.btn-border-sm > .btn:last-child, .jwg-strap .btn-group.btn-border-sm > .btn:last-child {
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #dedede; }
+  #jwg-strap .btn-group.btn-border-sm .btn, .jwg-strap .btn-group.btn-border-sm .btn {
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #dedede; }
+  #jwg-strap .btn-group.btn-border-md > .btn:first-child, .jwg-strap .btn-group.btn-border-md > .btn:first-child {
+    border-width: 2px 1px 2px 2px;
+    border-style: solid;
+    border-color: #dedede; }
+  #jwg-strap .btn-group.btn-border-md > .btn:last-child, .jwg-strap .btn-group.btn-border-md > .btn:last-child {
+    border-width: 2px 2px 2px 1px;
+    border-style: solid;
+    border-color: #dedede; }
+  #jwg-strap .btn-group.btn-border-md .btn, .jwg-strap .btn-group.btn-border-md .btn {
+    border-width: 2px 1px 2px 1px;
+    border-style: solid;
+    border-color: #dedede; }
+  #jwg-strap .btn-group > .btn, .jwg-strap .btn-group > .btn {
+    margin: 0;
+    border-radius: 0; }
+  #jwg-strap .btn-group > .btn:first-child, .jwg-strap .btn-group > .btn:first-child {
+    border-radius: 6px 0 0 6px; }
+  #jwg-strap .btn-group > .btn:last-child, .jwg-strap .btn-group > .btn:last-child {
+    border-radius: 0 6px 6px 0; }
   #jwg-strap .alert, .jwg-strap .alert {
     width: 100%;
     margin: 10px 0;
